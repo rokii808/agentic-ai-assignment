@@ -1,0 +1,14 @@
+{
+  "source_file": "Survey_Data_GenAI_Critical_Thinking_Bangladesh.xlsx",
+  "source_sha256": "ac83024416d69ed486ee6627410ef09e68b0850d25d505f8a93a7e40a364eb2c",
+  "n_responses": 400,
+  "validation_issues": [
+    "Codebook documents StudentID, but the Data sheet does not contain it; respondent-level duplicate checking is impossible.",
+    "Codebook calls CT1 reverse-worded, while its documented composite and the supplied values use an unreversed arithmetic mean; confirm the original questionnaire anchors before using the score beyond this workbook."
+  ],
+  "usage_test": {
+    "H": 39.72755254414914,
+    "p_value": 1.217036618609335e-08,
+    "epsilon_squared": 0.09274634480845742
+  }
+}

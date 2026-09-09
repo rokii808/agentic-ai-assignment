@@ -1,0 +1,401 @@
+Year,Gender,Department,Usage_Freq,Primary_Tool,RelyOnAI_Answers,ReducesCritical,LimitsSkills,MemoryRetentionDrop,CT1_IndependentAnalysis,CT2_ProblemSolving,CT3_EvaluateSources,CT4_ArgueReasoning,HelpsLearnFast,HelpsStudyEfficiency,PROD1_TimeSaved,PROD2_TaskCompletion,PROD3_ConceptClarity,CGPA,CT_Composite,Dependency_Composite,Benefit_Composite,Cluster,CT_Sum,Dependency_Sum,Benefit_Sum,ct_recomputed,dependency_recomputed,benefit_recomputed,usage_ordinal
+4,Male,BBA,Often,Gemini,3,3,2,2,2,2,2,1,4,5,5,5,4,3.5,1.75,2.5,4.6,Balanced / Moderate Users,7,10,23,1.75,2.5,4.6,3
+2,Female,CSE,Often,ChatGPT,4,4,4,5,4,3,4,5,4,1,2,3,2,2.9,4.0,4.25,2.4,Highly Dependent / At-Risk Users,16,17,12,4.0,4.25,2.4,3
+4,Female,Civil,Daily,Microsoft Copilot,4,4,5,5,4,3,3,3,1,2,2,1,2,3.58,3.25,4.5,1.6,Highly Dependent / At-Risk Users,13,18,8,3.25,4.5,1.6,4
+3,Male,BBA,Daily,ChatGPT,5,5,5,5,3,3,2,2,4,4,3,4,4,3.35,2.5,5.0,3.8,"Strategic Users (High Reliance, High Benefit)",10,20,19,2.5,5.0,3.8,4
+1,Prefer not to say,CSE,Daily,ChatGPT,4,3,3,2,4,3,4,5,4,5,4,4,5,3.29,4.0,3.0,4.4,"Strategic Users (High Reliance, High Benefit)",16,12,22,4.0,3.0,4.4,4
+4,Female,CSE,Often,Gemini,5,5,5,4,3,3,2,3,4,3,4,3,3,2.98,2.75,4.75,3.4,Balanced / Moderate Users,11,19,17,2.75,4.75,3.4,3
+3,Male,BBA,Daily,Other,3,5,4,5,3,4,5,5,5,4,4,3,5,3.49,4.25,4.25,4.2,"Strategic Users (High Reliance, High Benefit)",17,17,21,4.25,4.25,4.2,4
+4,Female,CSE,Often,Bing AI,2,3,4,3,2,3,5,2,2,2,3,2,3,3.48,3.0,3.0,2.4,Balanced / Moderate Users,12,12,12,3.0,3.0,2.4,3
+1,Male,EEE,Sometimes,Microsoft Copilot,3,3,3,2,3,3,3,2,2,3,1,1,3,3.34,2.75,2.75,2.0,Balanced / Moderate Users,11,11,10,2.75,2.75,2.0,2
+2,Prefer not to say,Pharmacy,Daily,ChatGPT,5,4,5,5,1,1,3,1,3,5,4,4,4,2.75,1.5,4.75,4.0,"Strategic Users (High Reliance, High Benefit)",6,19,20,1.5,4.75,4.0,4
+2,Female,CSE,Daily,Other,5,5,5,5,3,2,3,2,4,3,5,5,4,2.74,2.5,5.0,4.2,"Strategic Users (High Reliance, High Benefit)",10,20,21,2.5,5.0,4.2,4
+4,Female,CSE,Daily,Bing AI,4,3,3,4,4,1,3,3,2,4,4,3,4,3.04,2.75,3.5,3.4,Balanced / Moderate Users,11,14,17,2.75,3.5,3.4,4
+3,Male,Pharmacy,Daily,ChatGPT,5,5,4,5,3,5,4,4,4,3,4,4,4,3.27,4.0,4.75,3.8,"Strategic Users (High Reliance, High Benefit)",16,19,19,4.0,4.75,3.8,4
+4,Female,BBA,Often,Gemini,5,4,5,5,2,2,2,2,2,3,2,1,2,3.38,2.0,4.75,2.0,Highly Dependent / At-Risk Users,8,19,10,2.0,4.75,2.0,3
+2,Male,CSE,Daily,ChatGPT,3,4,4,4,2,3,4,3,3,2,4,3,3,3.89,3.0,3.75,3.0,Highly Dependent / At-Risk Users,12,15,15,3.0,3.75,3.0,4
+1,Male,Civil,Sometimes,Microsoft Copilot,2,2,4,2,5,4,5,4,4,2,2,3,4,3.37,4.5,2.5,3.0,Cautious / Low-Usage Traditional Learners,18,10,15,4.5,2.5,3.0,2
+3,Male,Civil,Sometimes,ChatGPT,3,2,1,2,4,5,3,4,3,2,2,2,2,3.62,4.0,2.0,2.2,Cautious / Low-Usage Traditional Learners,16,8,11,4.0,2.0,2.2,2
+1,Female,EEE,Often,ChatGPT,2,2,2,2,4,3,4,3,4,3,3,3,5,3.46,3.5,2.0,3.6,Cautious / Low-Usage Traditional Learners,14,8,18,3.5,2.0,3.6,3
+4,Male,BBA,Daily,Bing AI,3,3,3,3,1,1,3,2,5,3,2,3,2,3.23,1.75,3.0,3.0,Balanced / Moderate Users,7,12,15,1.75,3.0,3.0,4
+3,Female,CSE,Often,ChatGPT,4,5,5,5,3,2,4,2,5,3,4,5,4,3.4,2.75,4.75,4.2,"Strategic Users (High Reliance, High Benefit)",11,19,21,2.75,4.75,4.2,3
+3,Female,CSE,Often,ChatGPT,4,5,5,4,3,3,3,3,3,2,4,4,3,3.09,3.0,4.5,3.2,Highly Dependent / At-Risk Users,12,18,16,3.0,4.5,3.2,3
+2,Male,BBA,Sometimes,ChatGPT,1,2,3,1,5,5,5,5,2,2,3,3,1,3.51,5.0,1.75,2.2,Cautious / Low-Usage Traditional Learners,20,7,11,5.0,1.75,2.2,2
+4,Male,CSE,Often,Gemini,3,3,5,4,3,2,2,3,2,3,3,3,3,3.64,2.5,3.75,2.8,Highly Dependent / At-Risk Users,10,15,14,2.5,3.75,2.8,3
+4,Male,BBA,Often,ChatGPT,5,5,5,5,3,3,4,3,4,4,4,5,5,2.69,3.25,5.0,4.4,"Strategic Users (High Reliance, High Benefit)",13,20,22,3.25,5.0,4.4,3
+4,Female,English,Often,ChatGPT,5,5,5,3,3,3,3,1,3,3,3,3,4,2.68,2.5,4.5,3.2,Highly Dependent / At-Risk Users,10,18,16,2.5,4.5,3.2,3
+1,Female,CSE,Often,Microsoft Copilot,2,4,2,4,3,4,3,3,2,3,3,2,2,2.83,3.25,3.0,2.4,Balanced / Moderate Users,13,12,12,3.25,3.0,2.4,3
+2,Male,BBA,Rarely,ChatGPT,2,3,5,4,2,2,2,2,3,3,2,3,3,3.19,2.0,3.5,2.8,Balanced / Moderate Users,8,14,14,2.0,3.5,2.8,1
+1,Female,CSE,Often,ChatGPT,3,3,4,5,3,4,3,3,3,3,2,2,2,3.1,3.25,3.75,2.4,Highly Dependent / At-Risk Users,13,15,12,3.25,3.75,2.4,3
+1,Male,Civil,Often,ChatGPT,3,2,3,3,3,5,5,4,5,5,5,5,3,3.53,4.25,2.75,4.6,Balanced / Moderate Users,17,11,23,4.25,2.75,4.6,3
+3,Female,CSE,Sometimes,ChatGPT,4,3,4,2,3,5,5,4,2,2,3,3,3,3.29,4.25,3.25,2.6,Balanced / Moderate Users,17,13,13,4.25,3.25,2.6,2
+3,Female,BBA,Sometimes,Bing AI,3,2,3,3,5,5,4,5,3,4,4,4,5,3.15,4.75,2.75,4.0,Balanced / Moderate Users,19,11,20,4.75,2.75,4.0,2
+4,Female,EEE,Often,ChatGPT,5,5,3,4,2,2,3,2,3,4,3,5,4,4.0,2.25,4.25,3.8,"Strategic Users (High Reliance, High Benefit)",9,17,19,2.25,4.25,3.8,3
+2,Female,CSE,Often,ChatGPT,5,4,4,2,4,4,5,5,3,2,3,4,4,3.63,4.5,3.75,3.2,Highly Dependent / At-Risk Users,18,15,16,4.5,3.75,3.2,3
+2,Female,BBA,Often,Bing AI,5,5,3,4,2,3,2,2,2,2,2,2,2,2.64,2.25,4.25,2.0,Highly Dependent / At-Risk Users,9,17,10,2.25,4.25,2.0,3
+2,Male,BBA,Often,ChatGPT,3,4,4,4,4,5,5,5,4,3,5,5,5,3.05,4.75,3.75,4.4,"Strategic Users (High Reliance, High Benefit)",19,15,22,4.75,3.75,4.4,3
+1,Male,EEE,Often,ChatGPT,5,5,4,5,3,3,3,2,4,2,2,3,3,2.74,2.75,4.75,2.8,Highly Dependent / At-Risk Users,11,19,14,2.75,4.75,2.8,3
+1,Male,BBA,Rarely,Microsoft Copilot,3,2,3,2,5,5,4,4,3,2,1,3,1,3.78,4.5,2.5,2.0,Cautious / Low-Usage Traditional Learners,18,10,10,4.5,2.5,2.0,1
+2,Male,Pharmacy,Often,Gemini,4,4,5,4,2,2,2,1,4,4,4,2,4,3.63,1.75,4.25,3.6,"Strategic Users (High Reliance, High Benefit)",7,17,18,1.75,4.25,3.6,3
+1,Female,CSE,Often,ChatGPT,2,1,2,3,4,4,4,5,3,3,4,3,3,3.29,4.25,2.0,3.2,Cautious / Low-Usage Traditional Learners,17,8,16,4.25,2.0,3.2,3
+3,Female,EEE,Daily,ChatGPT,5,5,4,5,3,4,4,1,5,2,4,5,4,2.82,3.0,4.75,4.0,"Strategic Users (High Reliance, High Benefit)",12,19,20,3.0,4.75,4.0,4
+2,Female,CSE,Daily,Gemini,2,2,2,3,4,3,4,3,5,4,5,5,4,3.16,3.5,2.25,4.6,Cautious / Low-Usage Traditional Learners,14,9,23,3.5,2.25,4.6,4
+4,Male,English,Sometimes,Gemini,3,2,3,3,4,5,5,5,1,2,2,1,3,3.0,4.75,2.75,1.8,Balanced / Moderate Users,19,11,9,4.75,2.75,1.8,2
+3,Female,EEE,Often,ChatGPT,4,4,4,4,3,3,4,3,3,3,4,2,3,2.71,3.25,4.0,3.0,Highly Dependent / At-Risk Users,13,16,15,3.25,4.0,3.0,3
+2,Male,CSE,Daily,Microsoft Copilot,5,5,4,5,3,2,2,2,4,4,4,4,4,3.29,2.25,4.75,4.0,"Strategic Users (High Reliance, High Benefit)",9,19,20,2.25,4.75,4.0,4
+4,Male,CSE,Often,ChatGPT,3,4,4,3,4,4,3,5,5,4,5,5,5,3.74,4.0,3.5,4.8,"Strategic Users (High Reliance, High Benefit)",16,14,24,4.0,3.5,4.8,3
+4,Female,Civil,Often,ChatGPT,3,3,4,3,2,2,4,1,4,3,5,3,4,3.17,2.25,3.25,3.8,"Strategic Users (High Reliance, High Benefit)",9,13,19,2.25,3.25,3.8,3
+2,Prefer not to say,CSE,Daily,ChatGPT,4,5,5,5,3,3,3,4,5,4,4,5,3,3.59,3.25,4.75,4.2,"Strategic Users (High Reliance, High Benefit)",13,19,21,3.25,4.75,4.2,4
+2,Female,BBA,Often,ChatGPT,4,4,3,5,4,4,4,4,4,3,3,3,3,2.86,4.0,4.0,3.2,Highly Dependent / At-Risk Users,16,16,16,4.0,4.0,3.2,3
+3,Male,CSE,Often,Microsoft Copilot,4,3,3,4,3,2,3,4,3,2,2,2,3,3.3,3.0,3.5,2.4,Balanced / Moderate Users,12,14,12,3.0,3.5,2.4,3
+1,Female,Pharmacy,Often,ChatGPT,5,4,3,5,3,1,2,3,3,3,4,3,3,3.25,2.25,4.25,3.2,Highly Dependent / At-Risk Users,9,17,16,2.25,4.25,3.2,3
+1,Male,CSE,Often,Microsoft Copilot,4,5,5,5,3,3,3,2,3,3,4,5,3,3.31,2.75,4.75,3.6,"Strategic Users (High Reliance, High Benefit)",11,19,18,2.75,4.75,3.6,3
+1,Female,CSE,Often,ChatGPT,4,5,5,5,3,3,2,2,5,3,2,2,2,3.41,2.5,4.75,2.8,Highly Dependent / At-Risk Users,10,19,14,2.5,4.75,2.8,3
+4,Female,Civil,Often,Bing AI,3,4,4,4,3,4,3,3,3,5,4,4,5,4.0,3.25,3.75,4.2,"Strategic Users (High Reliance, High Benefit)",13,15,21,3.25,3.75,4.2,3
+3,Male,Civil,Often,ChatGPT,3,3,4,3,5,5,5,4,4,3,1,2,2,3.32,4.75,3.25,2.4,Balanced / Moderate Users,19,13,12,4.75,3.25,2.4,3
+3,Male,CSE,Often,ChatGPT,4,4,5,5,1,2,2,2,3,3,4,4,4,3.44,1.75,4.5,3.6,"Strategic Users (High Reliance, High Benefit)",7,18,18,1.75,4.5,3.6,3
+4,Male,EEE,Often,Microsoft Copilot,5,5,5,5,3,3,3,3,3,3,4,3,4,3.0,3.0,5.0,3.4,Balanced / Moderate Users,12,20,17,3.0,5.0,3.4,3
+2,Prefer not to say,BBA,Often,ChatGPT,4,4,3,3,3,1,1,2,4,3,4,5,3,2.8,1.75,3.5,3.8,"Strategic Users (High Reliance, High Benefit)",7,14,19,1.75,3.5,3.8,3
+3,Male,Civil,Daily,ChatGPT,4,5,3,4,4,2,4,3,2,2,3,3,1,3.03,3.25,4.0,2.2,Highly Dependent / At-Risk Users,13,16,11,3.25,4.0,2.2,4
+1,Female,CSE,Sometimes,ChatGPT,3,2,3,4,2,4,4,3,2,3,5,3,2,3.62,3.25,3.0,3.0,Balanced / Moderate Users,13,12,15,3.25,3.0,3.0,2
+1,Female,EEE,Daily,ChatGPT,5,5,5,3,3,3,3,2,5,4,5,3,3,3.1,2.75,4.5,4.0,"Strategic Users (High Reliance, High Benefit)",11,18,20,2.75,4.5,4.0,4
+3,Male,BBA,Often,ChatGPT,1,3,2,3,5,5,5,5,3,4,3,3,3,4.0,5.0,2.25,3.2,Cautious / Low-Usage Traditional Learners,20,9,16,5.0,2.25,3.2,3
+2,Male,BBA,Often,Microsoft Copilot,3,5,3,5,3,3,2,1,4,4,4,4,5,3.4,2.25,4.0,4.2,"Strategic Users (High Reliance, High Benefit)",9,16,21,2.25,4.0,4.2,3
+3,Female,English,Daily,ChatGPT,5,5,4,5,3,5,4,4,4,3,3,2,2,3.25,4.0,4.75,2.8,Highly Dependent / At-Risk Users,16,19,14,4.0,4.75,2.8,4
+3,Male,EEE,Daily,ChatGPT,5,5,5,5,4,3,3,4,4,4,5,5,4,2.5,3.5,5.0,4.4,"Strategic Users (High Reliance, High Benefit)",14,20,22,3.5,5.0,4.4,4
+3,Male,CSE,Often,Gemini,5,3,4,5,3,2,4,4,3,2,4,2,3,3.0,3.25,4.25,2.8,Highly Dependent / At-Risk Users,13,17,14,3.25,4.25,2.8,3
+3,Female,Civil,Often,Microsoft Copilot,4,5,4,3,2,2,3,3,1,2,2,4,2,2.84,2.5,4.0,2.2,Highly Dependent / At-Risk Users,10,16,11,2.5,4.0,2.2,3
+3,Female,Civil,Daily,ChatGPT,2,3,4,5,2,3,4,4,3,3,4,2,4,2.95,3.25,3.5,3.2,Balanced / Moderate Users,13,14,16,3.25,3.5,3.2,4
+2,Female,English,Often,Bing AI,4,3,3,3,3,4,4,5,2,2,3,3,2,3.21,4.0,3.25,2.4,Balanced / Moderate Users,16,13,12,4.0,3.25,2.4,3
+1,Male,CSE,Sometimes,ChatGPT,2,1,1,2,2,3,3,3,3,3,4,4,3,3.2,2.75,1.5,3.4,Balanced / Moderate Users,11,6,17,2.75,1.5,3.4,2
+2,Male,CSE,Often,Other,3,4,5,4,4,2,3,3,2,2,3,3,3,3.21,3.0,4.0,2.6,Highly Dependent / At-Risk Users,12,16,13,3.0,4.0,2.6,3
+1,Male,BBA,Sometimes,ChatGPT,5,4,2,3,3,3,3,3,3,3,3,4,3,3.49,3.0,3.5,3.2,Balanced / Moderate Users,12,14,16,3.0,3.5,3.2,2
+2,Male,CSE,Sometimes,ChatGPT,5,4,5,5,3,1,2,3,3,2,4,4,3,3.06,2.25,4.75,3.2,Highly Dependent / At-Risk Users,9,19,16,2.25,4.75,3.2,2
+4,Male,Pharmacy,Often,Gemini,5,5,5,4,1,3,3,3,4,3,4,4,3,3.06,2.5,4.75,3.6,"Strategic Users (High Reliance, High Benefit)",10,19,18,2.5,4.75,3.6,3
+1,Male,CSE,Rarely,ChatGPT,3,1,3,3,3,5,5,5,2,2,3,3,2,3.08,4.5,2.5,2.4,Cautious / Low-Usage Traditional Learners,18,10,12,4.5,2.5,2.4,1
+1,Male,BBA,Often,ChatGPT,3,3,2,2,3,2,2,4,5,3,5,4,4,3.48,2.75,2.5,4.2,Balanced / Moderate Users,11,10,21,2.75,2.5,4.2,3
+2,Male,Civil,Often,ChatGPT,4,5,5,5,1,2,3,2,2,4,3,4,3,3.2,2.0,4.75,3.2,Highly Dependent / At-Risk Users,8,19,16,2.0,4.75,3.2,3
+2,Male,CSE,Sometimes,ChatGPT,1,1,3,2,3,2,3,4,4,3,4,3,3,3.8,3.0,1.75,3.4,Balanced / Moderate Users,12,7,17,3.0,1.75,3.4,2
+3,Female,CSE,Often,Microsoft Copilot,3,4,4,3,2,2,3,3,4,4,5,4,5,3.2,2.5,3.5,4.4,"Strategic Users (High Reliance, High Benefit)",10,14,22,2.5,3.5,4.4,3
+3,Female,BBA,Sometimes,ChatGPT,4,5,5,4,1,3,1,2,3,3,2,3,3,2.87,1.75,4.5,2.8,Highly Dependent / At-Risk Users,7,18,14,1.75,4.5,2.8,2
+4,Male,BBA,Often,ChatGPT,3,3,3,2,4,5,4,4,3,3,4,3,2,3.47,4.25,2.75,3.0,Balanced / Moderate Users,17,11,15,4.25,2.75,3.0,3
+3,Male,CSE,Often,Bing AI,5,4,5,5,2,3,3,4,2,4,3,3,3,3.32,3.0,4.75,3.0,Highly Dependent / At-Risk Users,12,19,15,3.0,4.75,3.0,3
+2,Male,BBA,Daily,ChatGPT,4,3,4,1,3,3,3,3,4,3,4,4,4,3.3,3.0,3.0,3.8,"Strategic Users (High Reliance, High Benefit)",12,12,19,3.0,3.0,3.8,4
+4,Female,Pharmacy,Sometimes,Microsoft Copilot,4,3,3,3,4,5,4,4,3,5,4,4,4,3.06,4.25,3.25,4.0,"Strategic Users (High Reliance, High Benefit)",17,13,20,4.25,3.25,4.0,2
+1,Male,EEE,Daily,Bing AI,4,4,5,5,3,2,2,3,3,2,2,3,3,2.81,2.5,4.5,2.6,Highly Dependent / At-Risk Users,10,18,13,2.5,4.5,2.6,4
+1,Male,CSE,Often,ChatGPT,3,4,5,4,3,2,5,4,5,5,4,4,4,3.11,3.5,4.0,4.4,"Strategic Users (High Reliance, High Benefit)",14,16,22,3.5,4.0,4.4,3
+1,Male,CSE,Often,ChatGPT,4,3,4,4,5,4,4,4,3,3,5,4,3,3.18,4.25,3.75,3.6,"Strategic Users (High Reliance, High Benefit)",17,15,18,4.25,3.75,3.6,3
+3,Male,CSE,Daily,ChatGPT,5,5,5,5,1,2,2,3,2,3,2,3,3,3.03,2.0,5.0,2.6,Highly Dependent / At-Risk Users,8,20,13,2.0,5.0,2.6,4
+2,Male,CSE,Often,ChatGPT,4,4,2,4,3,2,3,3,3,4,1,4,2,3.55,2.75,3.5,2.8,Balanced / Moderate Users,11,14,14,2.75,3.5,2.8,3
+1,Male,CSE,Sometimes,ChatGPT,4,4,4,3,4,4,4,3,2,3,3,4,4,3.23,3.75,3.75,3.2,Highly Dependent / At-Risk Users,15,15,16,3.75,3.75,3.2,2
+2,Male,BBA,Daily,ChatGPT,5,5,4,4,1,2,1,4,2,2,3,4,3,3.31,2.0,4.5,2.8,Highly Dependent / At-Risk Users,8,18,14,2.0,4.5,2.8,4
+1,Female,CSE,Sometimes,ChatGPT,1,1,2,1,5,4,5,5,3,2,2,2,2,3.29,4.75,1.25,2.2,Cautious / Low-Usage Traditional Learners,19,5,11,4.75,1.25,2.2,2
+3,Female,Pharmacy,Often,Microsoft Copilot,4,4,5,4,3,4,3,2,4,3,3,3,4,3.23,3.0,4.25,3.4,Balanced / Moderate Users,12,17,17,3.0,4.25,3.4,3
+2,Female,CSE,Often,Gemini,2,4,5,5,5,3,4,3,5,4,4,4,5,3.52,3.75,4.0,4.4,"Strategic Users (High Reliance, High Benefit)",15,16,22,3.75,4.0,4.4,3
+2,Male,CSE,Sometimes,Gemini,4,4,2,1,2,4,3,3,4,4,3,2,3,3.38,3.0,2.75,3.2,Balanced / Moderate Users,12,11,16,3.0,2.75,3.2,2
+2,Female,BBA,Often,ChatGPT,5,4,3,3,3,4,4,4,5,3,4,4,4,3.24,3.75,3.75,4.0,"Strategic Users (High Reliance, High Benefit)",15,15,20,3.75,3.75,4.0,3
+3,Male,Civil,Daily,Gemini,5,4,4,4,3,3,3,3,5,5,5,5,5,3.31,3.0,4.25,5.0,"Strategic Users (High Reliance, High Benefit)",12,17,25,3.0,4.25,5.0,4
+2,Male,CSE,Often,Microsoft Copilot,5,4,5,4,5,3,2,2,5,5,4,5,5,3.79,3.0,4.5,4.8,"Strategic Users (High Reliance, High Benefit)",12,18,24,3.0,4.5,4.8,3
+1,Female,CSE,Sometimes,ChatGPT,2,3,4,2,3,3,4,3,1,2,2,1,1,3.75,3.25,2.75,1.4,Balanced / Moderate Users,13,11,7,3.25,2.75,1.4,2
+1,Male,CSE,Sometimes,Gemini,2,2,3,3,4,2,4,4,4,3,3,3,3,3.67,3.5,2.5,3.2,Cautious / Low-Usage Traditional Learners,14,10,16,3.5,2.5,3.2,2
+4,Male,EEE,Often,Gemini,4,4,4,5,4,3,3,4,3,3,3,3,3,3.2,3.5,4.25,3.0,Highly Dependent / At-Risk Users,14,17,15,3.5,4.25,3.0,3
+4,Female,EEE,Daily,ChatGPT,5,5,5,5,2,3,3,2,4,4,3,4,2,2.81,2.5,5.0,3.4,Balanced / Moderate Users,10,20,17,2.5,5.0,3.4,4
+3,Female,CSE,Often,Gemini,3,4,2,2,4,5,5,4,4,3,5,3,4,3.16,4.5,2.75,3.8,Balanced / Moderate Users,18,11,19,4.5,2.75,3.8,3
+1,Female,CSE,Often,ChatGPT,3,3,3,3,3,2,3,4,4,4,4,3,3,3.14,3.0,3.0,3.6,"Strategic Users (High Reliance, High Benefit)",12,12,18,3.0,3.0,3.6,3
+4,Male,EEE,Often,ChatGPT,3,3,3,3,4,4,3,4,4,3,4,3,3,3.01,3.75,3.0,3.4,Balanced / Moderate Users,15,12,17,3.75,3.0,3.4,3
+4,Male,Pharmacy,Daily,ChatGPT,5,5,5,5,3,3,3,4,5,5,4,5,5,2.99,3.25,5.0,4.8,"Strategic Users (High Reliance, High Benefit)",13,20,24,3.25,5.0,4.8,4
+3,Female,BBA,Daily,ChatGPT,4,5,5,5,3,4,3,3,2,1,3,3,3,3.24,3.25,4.75,2.4,Highly Dependent / At-Risk Users,13,19,12,3.25,4.75,2.4,4
+2,Male,EEE,Rarely,Other,4,3,2,3,4,4,2,2,3,3,2,2,3,3.31,3.0,3.0,2.6,Balanced / Moderate Users,12,12,13,3.0,3.0,2.6,1
+2,Female,CSE,Often,ChatGPT,5,4,4,5,3,4,3,3,3,2,3,2,2,3.17,3.25,4.5,2.4,Highly Dependent / At-Risk Users,13,18,12,3.25,4.5,2.4,3
+1,Male,CSE,Sometimes,Gemini,5,5,5,5,4,3,3,4,3,3,3,4,3,3.15,3.5,5.0,3.2,Highly Dependent / At-Risk Users,14,20,16,3.5,5.0,3.2,2
+4,Male,CSE,Sometimes,Microsoft Copilot,5,5,5,3,3,2,3,3,3,3,2,2,3,3.27,2.75,4.5,2.6,Highly Dependent / At-Risk Users,11,18,13,2.75,4.5,2.6,2
+2,Male,BBA,Often,Microsoft Copilot,3,2,4,2,4,4,4,4,5,4,4,2,4,3.28,4.0,2.75,3.8,Balanced / Moderate Users,16,11,19,4.0,2.75,3.8,3
+1,Female,Civil,Daily,ChatGPT,3,3,5,2,3,3,5,4,3,4,3,4,2,3.55,3.75,3.25,3.2,Balanced / Moderate Users,15,13,16,3.75,3.25,3.2,4
+2,Male,Civil,Sometimes,ChatGPT,3,3,3,3,4,4,4,4,5,4,4,5,4,3.48,4.0,3.0,4.4,"Strategic Users (High Reliance, High Benefit)",16,12,22,4.0,3.0,4.4,2
+3,Male,Pharmacy,Sometimes,Bing AI,3,3,4,4,3,3,4,4,2,3,3,3,3,3.4,3.5,3.5,2.8,Balanced / Moderate Users,14,14,14,3.5,3.5,2.8,2
+1,Male,Pharmacy,Often,Gemini,3,2,3,3,4,4,4,3,2,3,4,4,4,2.91,3.75,2.75,3.4,Balanced / Moderate Users,15,11,17,3.75,2.75,3.4,3
+4,Male,Pharmacy,Daily,ChatGPT,5,5,5,4,3,1,3,3,3,4,4,2,4,2.93,2.5,4.75,3.4,Balanced / Moderate Users,10,19,17,2.5,4.75,3.4,4
+3,Male,CSE,Sometimes,Microsoft Copilot,3,3,2,2,3,3,3,4,3,2,3,3,3,3.82,3.25,2.5,2.8,Balanced / Moderate Users,13,10,14,3.25,2.5,2.8,2
+3,Female,CSE,Often,ChatGPT,3,4,4,3,3,3,4,4,3,3,2,3,4,3.46,3.5,3.5,3.0,Balanced / Moderate Users,14,14,15,3.5,3.5,3.0,3
+2,Male,CSE,Daily,Gemini,4,3,3,1,2,3,3,2,3,3,3,3,3,3.3,2.5,2.75,3.0,Balanced / Moderate Users,10,11,15,2.5,2.75,3.0,4
+3,Female,EEE,Daily,ChatGPT,4,4,5,4,2,4,3,3,4,5,5,5,5,3.79,3.0,4.25,4.8,"Strategic Users (High Reliance, High Benefit)",12,17,24,3.0,4.25,4.8,4
+3,Female,CSE,Often,ChatGPT,4,4,5,4,2,1,3,4,4,4,2,3,2,3.15,2.5,4.25,3.0,Highly Dependent / At-Risk Users,10,17,15,2.5,4.25,3.0,3
+3,Male,English,Often,Gemini,3,4,4,1,5,5,4,5,3,3,1,3,1,3.32,4.75,3.0,2.2,Balanced / Moderate Users,19,12,11,4.75,3.0,2.2,3
+1,Male,BBA,Often,ChatGPT,4,4,4,4,3,3,3,2,3,4,4,5,4,3.57,2.75,4.0,4.0,"Strategic Users (High Reliance, High Benefit)",11,16,20,2.75,4.0,4.0,3
+2,Female,EEE,Often,ChatGPT,5,4,4,5,2,2,2,1,3,2,3,4,3,3.1,1.75,4.5,3.0,Highly Dependent / At-Risk Users,7,18,15,1.75,4.5,3.0,3
+1,Male,CSE,Often,Other,4,3,3,3,5,4,3,3,4,5,4,5,4,3.42,3.75,3.25,4.4,"Strategic Users (High Reliance, High Benefit)",15,13,22,3.75,3.25,4.4,3
+2,Male,CSE,Daily,Microsoft Copilot,4,4,4,4,3,3,5,4,4,5,4,3,5,2.77,3.75,4.0,4.2,"Strategic Users (High Reliance, High Benefit)",15,16,21,3.75,4.0,4.2,4
+2,Female,CSE,Often,ChatGPT,3,4,4,3,3,4,4,4,3,4,4,4,4,3.36,3.75,3.5,3.8,"Strategic Users (High Reliance, High Benefit)",15,14,19,3.75,3.5,3.8,3
+1,Prefer not to say,Civil,Often,ChatGPT,3,4,2,4,5,4,3,4,3,1,2,1,2,3.29,4.0,3.25,1.8,Balanced / Moderate Users,16,13,9,4.0,3.25,1.8,3
+1,Female,BBA,Daily,ChatGPT,4,4,3,5,2,3,1,2,3,4,2,4,4,3.11,2.0,4.0,3.4,Balanced / Moderate Users,8,16,17,2.0,4.0,3.4,4
+3,Male,BBA,Often,Microsoft Copilot,4,4,3,4,4,5,4,4,4,3,4,3,2,3.68,4.25,3.75,3.2,Highly Dependent / At-Risk Users,17,15,16,4.25,3.75,3.2,3
+1,Female,CSE,Often,Other,5,4,5,5,3,2,2,4,3,2,3,2,4,3.07,2.75,4.75,2.8,Highly Dependent / At-Risk Users,11,19,14,2.75,4.75,2.8,3
+4,Female,CSE,Often,ChatGPT,5,5,5,5,3,1,2,2,4,3,4,3,2,3.14,2.0,5.0,3.2,Highly Dependent / At-Risk Users,8,20,16,2.0,5.0,3.2,3
+3,Male,CSE,Sometimes,Microsoft Copilot,4,2,2,5,2,4,3,3,3,4,4,3,3,3.35,3.0,3.25,3.4,Balanced / Moderate Users,12,13,17,3.0,3.25,3.4,2
+2,Female,BBA,Often,ChatGPT,5,4,4,5,2,2,2,1,3,4,4,4,4,3.29,1.75,4.5,3.8,"Strategic Users (High Reliance, High Benefit)",7,18,19,1.75,4.5,3.8,3
+3,Male,English,Often,ChatGPT,5,5,4,5,2,2,4,3,3,3,3,4,4,3.46,2.75,4.75,3.4,Balanced / Moderate Users,11,19,17,2.75,4.75,3.4,3
+1,Male,CSE,Daily,ChatGPT,5,4,5,5,2,3,2,2,5,3,4,3,3,2.71,2.25,4.75,3.6,"Strategic Users (High Reliance, High Benefit)",9,19,18,2.25,4.75,3.6,4
+4,Male,Pharmacy,Daily,ChatGPT,4,5,4,4,2,3,2,2,2,1,2,1,2,3.4,2.25,4.25,1.6,Highly Dependent / At-Risk Users,9,17,8,2.25,4.25,1.6,4
+2,Male,CSE,Often,ChatGPT,4,4,4,3,2,3,3,3,4,4,5,4,3,3.35,2.75,3.75,4.0,"Strategic Users (High Reliance, High Benefit)",11,15,20,2.75,3.75,4.0,3
+4,Male,Civil,Often,ChatGPT,5,5,5,5,3,4,3,4,4,5,4,4,5,3.17,3.5,5.0,4.4,"Strategic Users (High Reliance, High Benefit)",14,20,22,3.5,5.0,4.4,3
+1,Female,CSE,Sometimes,ChatGPT,1,2,3,3,4,3,3,3,3,4,3,3,4,3.76,3.25,2.25,3.4,Balanced / Moderate Users,13,9,17,3.25,2.25,3.4,2
+2,Prefer not to say,CSE,Daily,Bing AI,5,5,5,5,3,2,2,4,3,3,4,4,4,3.12,2.75,5.0,3.6,"Strategic Users (High Reliance, High Benefit)",11,20,18,2.75,5.0,3.6,4
+2,Male,English,Often,Bing AI,4,3,1,3,5,4,3,4,3,2,3,3,2,3.03,4.0,2.75,2.6,Balanced / Moderate Users,16,11,13,4.0,2.75,2.6,3
+4,Female,CSE,Often,ChatGPT,4,5,3,4,3,4,3,3,2,2,2,1,1,3.31,3.25,4.0,1.6,Highly Dependent / At-Risk Users,13,16,8,3.25,4.0,1.6,3
+3,Prefer not to say,CSE,Daily,ChatGPT,4,4,4,3,4,3,4,4,3,3,3,2,3,3.48,3.75,3.75,2.8,Highly Dependent / At-Risk Users,15,15,14,3.75,3.75,2.8,4
+2,Male,EEE,Sometimes,ChatGPT,5,5,4,5,1,4,1,2,2,1,3,4,2,2.8,2.0,4.75,2.4,Highly Dependent / At-Risk Users,8,19,12,2.0,4.75,2.4,2
+1,Male,CSE,Sometimes,Bing AI,3,3,3,2,4,4,4,4,2,2,2,2,3,3.44,4.0,2.75,2.2,Balanced / Moderate Users,16,11,11,4.0,2.75,2.2,2
+2,Male,BBA,Often,ChatGPT,4,5,4,4,2,3,4,3,5,3,4,4,4,3.9,3.0,4.25,4.0,"Strategic Users (High Reliance, High Benefit)",12,17,20,3.0,4.25,4.0,3
+2,Male,Civil,Often,Microsoft Copilot,4,3,3,5,5,4,3,4,1,1,1,1,1,2.84,4.0,3.75,1.0,Highly Dependent / At-Risk Users,16,15,5,4.0,3.75,1.0,3
+2,Female,Civil,Often,ChatGPT,5,5,5,5,3,2,2,1,2,2,2,3,3,2.9,2.0,5.0,2.4,Highly Dependent / At-Risk Users,8,20,12,2.0,5.0,2.4,3
+1,Male,CSE,Sometimes,ChatGPT,2,3,3,2,3,4,4,4,4,4,2,2,3,3.1,3.75,2.5,3.0,Cautious / Low-Usage Traditional Learners,15,10,15,3.75,2.5,3.0,2
+4,Male,EEE,Daily,Bing AI,5,5,5,5,1,1,2,2,3,3,3,3,4,3.3,1.5,5.0,3.2,Highly Dependent / At-Risk Users,6,20,16,1.5,5.0,3.2,4
+4,Male,CSE,Daily,ChatGPT,4,3,4,5,3,3,3,3,3,3,2,2,3,3.22,3.0,4.0,2.6,Highly Dependent / At-Risk Users,12,16,13,3.0,4.0,2.6,4
+1,Male,CSE,Sometimes,Microsoft Copilot,3,3,4,3,4,4,4,4,4,5,3,3,4,3.44,4.0,3.25,3.8,"Strategic Users (High Reliance, High Benefit)",16,13,19,4.0,3.25,3.8,2
+3,Female,CSE,Often,ChatGPT,4,4,5,3,3,2,3,3,1,2,2,2,1,3.54,2.75,4.0,1.6,Highly Dependent / At-Risk Users,11,16,8,2.75,4.0,1.6,3
+1,Male,Pharmacy,Sometimes,ChatGPT,3,2,1,1,5,3,5,5,3,3,3,3,2,3.95,4.5,1.75,2.8,Cautious / Low-Usage Traditional Learners,18,7,14,4.5,1.75,2.8,2
+3,Male,Civil,Daily,Gemini,3,3,3,2,4,3,3,4,5,4,4,4,5,3.06,3.5,2.75,4.4,Balanced / Moderate Users,14,11,22,3.5,2.75,4.4,4
+2,Male,English,Daily,Gemini,4,4,5,4,3,3,2,3,5,4,4,4,4,4.0,2.75,4.25,4.2,"Strategic Users (High Reliance, High Benefit)",11,17,21,2.75,4.25,4.2,4
+3,Male,EEE,Often,Other,5,5,4,5,3,3,2,2,1,2,3,2,2,2.78,2.5,4.75,2.0,Highly Dependent / At-Risk Users,10,19,10,2.5,4.75,2.0,3
+3,Female,EEE,Daily,Gemini,3,3,3,4,4,4,3,3,3,3,4,4,2,3.06,3.5,3.25,3.2,Balanced / Moderate Users,14,13,16,3.5,3.25,3.2,4
+3,Male,EEE,Often,ChatGPT,3,3,2,2,5,5,4,4,4,5,4,5,4,2.78,4.5,2.5,4.4,Cautious / Low-Usage Traditional Learners,18,10,22,4.5,2.5,4.4,3
+1,Male,EEE,Sometimes,Microsoft Copilot,2,1,1,2,4,3,3,4,4,4,4,5,5,3.56,3.5,1.5,4.4,Cautious / Low-Usage Traditional Learners,14,6,22,3.5,1.5,4.4,2
+4,Male,EEE,Often,ChatGPT,4,5,5,5,2,1,2,2,4,3,5,4,4,3.16,1.75,4.75,4.0,"Strategic Users (High Reliance, High Benefit)",7,19,20,1.75,4.75,4.0,3
+1,Female,CSE,Often,ChatGPT,4,4,4,4,4,4,3,5,3,3,4,2,3,3.52,4.0,4.0,3.0,Highly Dependent / At-Risk Users,16,16,15,4.0,4.0,3.0,3
+1,Female,CSE,Daily,Bing AI,5,5,5,4,2,2,3,3,3,2,2,3,4,3.26,2.5,4.75,2.8,Highly Dependent / At-Risk Users,10,19,14,2.5,4.75,2.8,4
+3,Female,Pharmacy,Daily,Microsoft Copilot,5,3,5,4,3,5,3,3,3,3,3,2,3,3.59,3.5,4.25,2.8,Highly Dependent / At-Risk Users,14,17,14,3.5,4.25,2.8,4
+2,Female,EEE,Often,ChatGPT,3,3,4,3,2,2,2,3,4,3,1,3,3,3.25,2.25,3.25,2.8,Balanced / Moderate Users,9,13,14,2.25,3.25,2.8,3
+4,Female,Pharmacy,Often,Microsoft Copilot,3,5,3,4,2,4,3,3,5,4,4,3,5,2.92,3.0,3.75,4.2,"Strategic Users (High Reliance, High Benefit)",12,15,21,3.0,3.75,4.2,3
+4,Male,CSE,Daily,ChatGPT,5,5,5,3,3,2,2,2,3,2,1,3,3,3.1,2.25,4.5,2.4,Highly Dependent / At-Risk Users,9,18,12,2.25,4.5,2.4,4
+2,Male,EEE,Often,ChatGPT,3,2,2,4,5,5,4,4,1,3,3,2,3,3.59,4.5,2.75,2.4,Balanced / Moderate Users,18,11,12,4.5,2.75,2.4,3
+4,Male,CSE,Often,ChatGPT,2,2,3,3,2,5,3,4,4,5,5,5,5,2.85,3.5,2.5,4.8,Cautious / Low-Usage Traditional Learners,14,10,24,3.5,2.5,4.8,3
+2,Male,CSE,Often,Bing AI,4,5,5,5,2,2,3,3,2,3,2,3,2,3.25,2.5,4.75,2.4,Highly Dependent / At-Risk Users,10,19,12,2.5,4.75,2.4,3
+2,Female,CSE,Rarely,ChatGPT,3,4,3,5,3,3,4,4,3,2,2,2,3,3.29,3.5,3.75,2.4,Highly Dependent / At-Risk Users,14,15,12,3.5,3.75,2.4,1
+1,Male,CSE,Sometimes,Gemini,2,2,3,2,5,5,4,4,4,2,3,3,3,3.15,4.5,2.25,3.0,Cautious / Low-Usage Traditional Learners,18,9,15,4.5,2.25,3.0,2
+4,Female,Civil,Often,ChatGPT,5,4,5,5,5,3,3,3,3,3,3,4,3,3.45,3.5,4.75,3.2,Highly Dependent / At-Risk Users,14,19,16,3.5,4.75,3.2,3
+1,Female,CSE,Often,Bing AI,4,3,5,4,4,4,4,4,5,5,5,5,5,3.38,4.0,4.0,5.0,"Strategic Users (High Reliance, High Benefit)",16,16,25,4.0,4.0,5.0,3
+1,Male,BBA,Sometimes,ChatGPT,4,5,4,4,2,3,2,2,1,2,2,1,3,2.82,2.25,4.25,1.8,Highly Dependent / At-Risk Users,9,17,9,2.25,4.25,1.8,2
+2,Female,EEE,Sometimes,ChatGPT,4,5,4,4,4,3,3,4,4,4,3,2,3,3.3,3.5,4.25,3.2,Highly Dependent / At-Risk Users,14,17,16,3.5,4.25,3.2,2
+4,Female,CSE,Often,ChatGPT,5,4,5,5,3,4,2,3,3,2,2,1,3,3.46,3.0,4.75,2.2,Highly Dependent / At-Risk Users,12,19,11,3.0,4.75,2.2,3
+4,Female,EEE,Sometimes,Bing AI,1,3,3,2,5,4,4,4,5,5,4,4,4,3.02,4.25,2.25,4.4,Cautious / Low-Usage Traditional Learners,17,9,22,4.25,2.25,4.4,2
+3,Male,CSE,Often,ChatGPT,4,5,5,2,3,3,3,3,4,3,3,3,3,2.94,3.0,4.0,3.2,Highly Dependent / At-Risk Users,12,16,16,3.0,4.0,3.2,3
+4,Male,Pharmacy,Often,Bing AI,5,5,4,5,3,3,1,2,4,4,3,3,3,3.41,2.25,4.75,3.4,Balanced / Moderate Users,9,19,17,2.25,4.75,3.4,3
+4,Male,English,Daily,ChatGPT,5,5,5,5,2,1,3,1,5,5,5,5,4,2.98,1.75,5.0,4.8,"Strategic Users (High Reliance, High Benefit)",7,20,24,1.75,5.0,4.8,4
+2,Male,BBA,Rarely,ChatGPT,1,2,2,2,5,4,4,5,5,4,4,4,4,3.1,4.5,1.75,4.2,Cautious / Low-Usage Traditional Learners,18,7,21,4.5,1.75,4.2,1
+2,Male,EEE,Sometimes,Gemini,1,2,1,2,5,5,4,5,2,3,2,2,3,3.62,4.75,1.5,2.4,Cautious / Low-Usage Traditional Learners,19,6,12,4.75,1.5,2.4,2
+4,Female,CSE,Often,ChatGPT,4,3,3,4,4,3,5,4,4,3,4,2,1,3.12,4.0,3.5,2.8,Balanced / Moderate Users,16,14,14,4.0,3.5,2.8,3
+3,Female,Civil,Often,Gemini,5,4,3,5,3,2,2,2,4,3,3,4,4,3.52,2.25,4.25,3.6,"Strategic Users (High Reliance, High Benefit)",9,17,18,2.25,4.25,3.6,3
+2,Male,CSE,Often,Microsoft Copilot,4,3,4,3,4,3,2,4,4,4,4,3,3,3.46,3.25,3.5,3.6,"Strategic Users (High Reliance, High Benefit)",13,14,18,3.25,3.5,3.6,3
+1,Male,CSE,Sometimes,Gemini,5,5,4,4,4,2,3,3,2,3,3,2,2,3.35,3.0,4.5,2.4,Highly Dependent / At-Risk Users,12,18,12,3.0,4.5,2.4,2
+3,Male,CSE,Often,ChatGPT,3,4,3,4,5,5,5,5,5,5,5,5,5,2.98,5.0,3.5,5.0,"Strategic Users (High Reliance, High Benefit)",20,14,25,5.0,3.5,5.0,3
+1,Male,English,Rarely,Microsoft Copilot,2,4,3,3,4,3,3,3,5,3,4,4,3,3.03,3.25,3.0,3.8,"Strategic Users (High Reliance, High Benefit)",13,12,19,3.25,3.0,3.8,1
+4,Female,BBA,Sometimes,Gemini,5,5,5,5,4,3,4,4,3,4,3,3,3,2.8,3.75,5.0,3.2,Highly Dependent / At-Risk Users,15,20,16,3.75,5.0,3.2,2
+1,Male,BBA,Often,ChatGPT,3,5,5,5,3,4,4,3,3,4,4,4,4,3.07,3.5,4.5,3.8,"Strategic Users (High Reliance, High Benefit)",14,18,19,3.5,4.5,3.8,3
+1,Male,English,Daily,Microsoft Copilot,4,4,4,4,3,2,5,3,3,2,3,3,4,3.1,3.25,4.0,3.0,Highly Dependent / At-Risk Users,13,16,15,3.25,4.0,3.0,4
+4,Female,CSE,Often,ChatGPT,2,3,2,3,2,1,2,1,2,4,3,3,2,2.81,1.5,2.5,2.8,Balanced / Moderate Users,6,10,14,1.5,2.5,2.8,3
+1,Male,Civil,Often,ChatGPT,4,4,4,4,4,1,2,3,3,4,4,4,3,3.36,2.5,4.0,3.6,"Strategic Users (High Reliance, High Benefit)",10,16,18,2.5,4.0,3.6,3
+1,Male,EEE,Often,Microsoft Copilot,3,4,3,2,5,3,4,4,3,4,4,4,3,3.21,4.0,3.0,3.6,"Strategic Users (High Reliance, High Benefit)",16,12,18,4.0,3.0,3.6,3
+3,Female,BBA,Often,Microsoft Copilot,4,5,4,5,4,3,3,3,3,4,4,5,4,3.15,3.25,4.5,4.0,"Strategic Users (High Reliance, High Benefit)",13,18,20,3.25,4.5,4.0,3
+4,Female,CSE,Often,ChatGPT,5,5,3,4,2,1,2,2,3,4,4,2,3,3.27,1.75,4.25,3.2,Highly Dependent / At-Risk Users,7,17,16,1.75,4.25,3.2,3
+1,Prefer not to say,Pharmacy,Sometimes,ChatGPT,3,5,5,4,5,5,5,3,4,4,3,3,3,2.83,4.5,4.25,3.4,Balanced / Moderate Users,18,17,17,4.5,4.25,3.4,2
+2,Female,CSE,Sometimes,ChatGPT,3,3,5,5,4,4,4,4,2,3,1,4,4,3.31,4.0,4.0,2.8,Highly Dependent / At-Risk Users,16,16,14,4.0,4.0,2.8,2
+4,Male,CSE,Daily,Gemini,4,4,3,4,3,2,3,3,3,2,4,1,3,3.06,2.75,3.75,2.6,Highly Dependent / At-Risk Users,11,15,13,2.75,3.75,2.6,4
+4,Female,EEE,Daily,Gemini,5,4,5,4,2,2,2,2,3,2,3,2,2,3.26,2.0,4.5,2.4,Highly Dependent / At-Risk Users,8,18,12,2.0,4.5,2.4,4
+2,Female,CSE,Often,ChatGPT,4,4,4,5,4,2,2,4,3,4,4,2,2,3.69,3.0,4.25,3.0,Highly Dependent / At-Risk Users,12,17,15,3.0,4.25,3.0,3
+1,Female,CSE,Sometimes,ChatGPT,3,2,3,2,4,5,3,5,3,3,2,4,3,3.77,4.25,2.5,3.0,Cautious / Low-Usage Traditional Learners,17,10,15,4.25,2.5,3.0,2
+1,Female,BBA,Often,ChatGPT,1,2,2,2,5,3,3,5,5,3,4,5,4,3.44,4.0,1.75,4.2,Cautious / Low-Usage Traditional Learners,16,7,21,4.0,1.75,4.2,3
+1,Female,CSE,Sometimes,Bing AI,3,3,3,2,4,3,4,4,3,2,4,3,4,3.2,3.75,2.75,3.2,Balanced / Moderate Users,15,11,16,3.75,2.75,3.2,2
+1,Female,Civil,Daily,Bing AI,4,4,5,4,2,3,3,3,5,5,4,4,4,3.8,2.75,4.25,4.4,"Strategic Users (High Reliance, High Benefit)",11,17,22,2.75,4.25,4.4,4
+3,Male,CSE,Daily,ChatGPT,3,4,5,3,2,3,4,4,3,4,3,4,3,3.21,3.25,3.75,3.4,Balanced / Moderate Users,13,15,17,3.25,3.75,3.4,4
+1,Female,BBA,Sometimes,ChatGPT,4,3,3,3,3,4,3,2,3,3,3,4,4,3.71,3.0,3.25,3.4,Balanced / Moderate Users,12,13,17,3.0,3.25,3.4,2
+2,Male,EEE,Often,Other,2,3,3,3,4,3,4,4,1,3,4,2,3,3.77,3.75,2.75,2.6,Balanced / Moderate Users,15,11,13,3.75,2.75,2.6,3
+3,Male,BBA,Often,Gemini,3,4,3,2,3,4,4,2,5,4,5,5,4,3.15,3.25,3.0,4.6,"Strategic Users (High Reliance, High Benefit)",13,12,23,3.25,3.0,4.6,3
+3,Female,BBA,Sometimes,ChatGPT,4,4,4,5,2,4,3,1,4,4,5,5,5,2.9,2.5,4.25,4.6,"Strategic Users (High Reliance, High Benefit)",10,17,23,2.5,4.25,4.6,2
+1,Female,EEE,Often,ChatGPT,4,4,4,4,5,5,4,3,3,3,4,3,3,2.96,4.25,4.0,3.2,Highly Dependent / At-Risk Users,17,16,16,4.25,4.0,3.2,3
+4,Prefer not to say,Pharmacy,Often,Gemini,2,3,3,2,4,5,4,4,3,3,3,3,1,3.74,4.25,2.5,2.6,Cautious / Low-Usage Traditional Learners,17,10,13,4.25,2.5,2.6,3
+3,Male,CSE,Daily,Microsoft Copilot,5,5,5,4,2,4,2,3,3,4,3,3,4,2.97,2.75,4.75,3.4,Balanced / Moderate Users,11,19,17,2.75,4.75,3.4,4
+3,Female,CSE,Daily,ChatGPT,5,5,4,5,2,2,2,2,3,4,3,2,4,3.25,2.0,4.75,3.2,Highly Dependent / At-Risk Users,8,19,16,2.0,4.75,3.2,4
+1,Female,BBA,Often,ChatGPT,3,3,5,4,4,4,3,4,2,1,3,2,2,3.79,3.75,3.75,2.0,Highly Dependent / At-Risk Users,15,15,10,3.75,3.75,2.0,3
+1,Male,English,Often,Gemini,3,2,2,4,5,4,3,4,5,4,5,4,4,3.51,4.0,2.75,4.4,Balanced / Moderate Users,16,11,22,4.0,2.75,4.4,3
+4,Male,CSE,Often,Other,4,5,3,3,4,3,2,2,5,4,4,5,5,3.65,2.75,3.75,4.6,"Strategic Users (High Reliance, High Benefit)",11,15,23,2.75,3.75,4.6,3
+2,Male,EEE,Often,Microsoft Copilot,4,4,5,5,3,4,4,4,2,2,3,3,1,3.44,3.75,4.5,2.2,Highly Dependent / At-Risk Users,15,18,11,3.75,4.5,2.2,3
+2,Female,Civil,Often,ChatGPT,5,3,5,4,2,4,3,2,3,4,4,3,3,3.41,2.75,4.25,3.4,Balanced / Moderate Users,11,17,17,2.75,4.25,3.4,3
+2,Male,BBA,Often,ChatGPT,4,5,3,4,5,3,5,4,4,4,3,3,3,3.32,4.25,4.0,3.4,Balanced / Moderate Users,17,16,17,4.25,4.0,3.4,3
+3,Prefer not to say,Pharmacy,Often,ChatGPT,4,3,3,4,4,3,2,2,2,3,4,2,2,3.01,2.75,3.5,2.6,Balanced / Moderate Users,11,14,13,2.75,3.5,2.6,3
+4,Male,EEE,Daily,ChatGPT,5,5,5,4,4,4,4,3,4,4,5,5,5,3.05,3.75,4.75,4.6,"Strategic Users (High Reliance, High Benefit)",15,19,23,3.75,4.75,4.6,4
+2,Prefer not to say,BBA,Daily,Bing AI,3,2,4,2,3,3,4,3,4,4,5,5,3,3.39,3.25,2.75,4.2,Balanced / Moderate Users,13,11,21,3.25,2.75,4.2,4
+4,Male,CSE,Daily,Gemini,4,4,4,4,3,4,4,4,2,2,3,4,3,3.21,3.75,4.0,2.8,Highly Dependent / At-Risk Users,15,16,14,3.75,4.0,2.8,4
+1,Female,Pharmacy,Daily,Bing AI,2,4,4,4,4,3,2,3,2,3,4,4,3,3.54,3.0,3.5,3.2,Balanced / Moderate Users,12,14,16,3.0,3.5,3.2,4
+3,Male,CSE,Often,ChatGPT,4,4,5,5,2,3,2,3,4,4,3,4,2,2.93,2.5,4.5,3.4,Balanced / Moderate Users,10,18,17,2.5,4.5,3.4,3
+3,Male,BBA,Often,ChatGPT,2,2,1,2,5,4,4,3,3,3,3,3,3,3.09,4.0,1.75,3.0,Cautious / Low-Usage Traditional Learners,16,7,15,4.0,1.75,3.0,3
+1,Female,CSE,Often,ChatGPT,4,4,4,4,5,5,3,5,4,3,4,3,2,3.4,4.5,4.0,3.2,Highly Dependent / At-Risk Users,18,16,16,4.5,4.0,3.2,3
+1,Female,EEE,Sometimes,Microsoft Copilot,3,3,3,2,3,2,4,2,3,3,3,2,3,3.78,2.75,2.75,2.8,Balanced / Moderate Users,11,11,14,2.75,2.75,2.8,2
+2,Female,BBA,Daily,Microsoft Copilot,5,5,4,5,2,2,3,2,2,4,4,3,2,2.94,2.25,4.75,3.0,Highly Dependent / At-Risk Users,9,19,15,2.25,4.75,3.0,4
+4,Male,EEE,Daily,ChatGPT,4,3,2,4,4,3,4,3,3,4,4,4,4,2.98,3.5,3.25,3.8,"Strategic Users (High Reliance, High Benefit)",14,13,19,3.5,3.25,3.8,4
+3,Male,Civil,Often,Bing AI,3,4,4,4,4,4,4,3,3,4,4,5,5,3.47,3.75,3.75,4.2,"Strategic Users (High Reliance, High Benefit)",15,15,21,3.75,3.75,4.2,3
+4,Male,CSE,Often,ChatGPT,3,3,4,2,3,5,4,3,3,3,3,4,5,3.39,3.75,3.0,3.6,"Strategic Users (High Reliance, High Benefit)",15,12,18,3.75,3.0,3.6,3
+4,Male,BBA,Sometimes,Gemini,1,3,4,1,5,2,4,4,3,5,5,4,5,3.21,3.75,2.25,4.4,Cautious / Low-Usage Traditional Learners,15,9,22,3.75,2.25,4.4,2
+2,Female,CSE,Daily,Bing AI,4,4,4,5,4,3,4,4,4,4,3,4,4,3.25,3.75,4.25,3.8,"Strategic Users (High Reliance, High Benefit)",15,17,19,3.75,4.25,3.8,4
+4,Female,CSE,Daily,ChatGPT,4,5,4,4,3,2,2,2,3,3,3,3,4,3.25,2.25,4.25,3.2,Highly Dependent / At-Risk Users,9,17,16,2.25,4.25,3.2,4
+1,Female,EEE,Sometimes,ChatGPT,4,3,5,5,4,3,4,3,3,4,3,4,3,3.09,3.5,4.25,3.4,Balanced / Moderate Users,14,17,17,3.5,4.25,3.4,2
+1,Female,CSE,Rarely,ChatGPT,2,1,2,3,4,4,3,5,2,4,5,3,4,3.38,4.0,2.0,3.6,Cautious / Low-Usage Traditional Learners,16,8,18,4.0,2.0,3.6,1
+4,Female,CSE,Daily,ChatGPT,5,5,5,5,1,2,3,1,2,4,4,4,3,2.62,1.75,5.0,3.4,Balanced / Moderate Users,7,20,17,1.75,5.0,3.4,4
+4,Female,BBA,Daily,ChatGPT,4,4,4,3,4,2,2,3,4,5,5,5,5,3.06,2.75,3.75,4.8,"Strategic Users (High Reliance, High Benefit)",11,15,24,2.75,3.75,4.8,4
+1,Male,BBA,Sometimes,ChatGPT,4,3,2,4,5,5,5,5,3,4,4,4,3,3.69,5.0,3.25,3.6,"Strategic Users (High Reliance, High Benefit)",20,13,18,5.0,3.25,3.6,2
+3,Male,BBA,Daily,Other,4,5,4,4,2,2,3,2,3,3,4,4,4,3.03,2.25,4.25,3.6,"Strategic Users (High Reliance, High Benefit)",9,17,18,2.25,4.25,3.6,4
+3,Female,CSE,Sometimes,ChatGPT,3,4,3,3,4,4,3,3,4,5,5,4,5,3.4,3.5,3.25,4.6,"Strategic Users (High Reliance, High Benefit)",14,13,23,3.5,3.25,4.6,2
+4,Female,CSE,Daily,Microsoft Copilot,5,5,5,5,1,2,2,1,3,4,5,3,3,2.84,1.5,5.0,3.6,"Strategic Users (High Reliance, High Benefit)",6,20,18,1.5,5.0,3.6,4
+3,Male,CSE,Often,Other,4,3,3,2,4,5,5,5,4,4,4,4,4,3.34,4.75,3.0,4.0,"Strategic Users (High Reliance, High Benefit)",19,12,20,4.75,3.0,4.0,3
+2,Male,English,Daily,Microsoft Copilot,5,5,5,5,4,4,4,2,3,2,1,2,3,3.31,3.5,5.0,2.2,Highly Dependent / At-Risk Users,14,20,11,3.5,5.0,2.2,4
+2,Female,Civil,Often,Bing AI,4,5,5,5,3,3,3,2,3,3,4,4,4,3.71,2.75,4.75,3.6,"Strategic Users (High Reliance, High Benefit)",11,19,18,2.75,4.75,3.6,3
+2,Male,CSE,Often,ChatGPT,5,5,4,5,3,2,2,2,4,4,5,5,4,3.16,2.25,4.75,4.4,"Strategic Users (High Reliance, High Benefit)",9,19,22,2.25,4.75,4.4,3
+3,Male,BBA,Daily,ChatGPT,5,5,5,5,2,2,3,2,5,5,5,4,4,2.88,2.25,5.0,4.6,"Strategic Users (High Reliance, High Benefit)",9,20,23,2.25,5.0,4.6,4
+4,Female,CSE,Daily,ChatGPT,5,5,5,4,1,1,3,2,4,2,3,4,2,3.49,1.75,4.75,3.0,Highly Dependent / At-Risk Users,7,19,15,1.75,4.75,3.0,4
+2,Female,CSE,Daily,ChatGPT,2,4,2,4,1,1,1,2,3,5,4,3,5,3.17,1.25,3.0,4.0,"Strategic Users (High Reliance, High Benefit)",5,12,20,1.25,3.0,4.0,4
+1,Male,CSE,Daily,ChatGPT,5,4,4,3,3,4,3,3,3,3,3,3,4,3.21,3.25,4.0,3.2,Highly Dependent / At-Risk Users,13,16,16,3.25,4.0,3.2,4
+1,Female,CSE,Rarely,ChatGPT,3,3,1,4,4,4,3,3,3,4,3,2,3,3.33,3.5,2.75,3.0,Balanced / Moderate Users,14,11,15,3.5,2.75,3.0,1
+3,Male,BBA,Daily,Gemini,1,2,2,1,5,5,5,4,3,5,3,5,4,3.41,4.75,1.5,4.0,Cautious / Low-Usage Traditional Learners,19,6,20,4.75,1.5,4.0,4
+4,Female,Civil,Often,Gemini,5,4,5,3,3,4,3,3,2,2,2,3,2,3.39,3.25,4.25,2.2,Highly Dependent / At-Risk Users,13,17,11,3.25,4.25,2.2,3
+1,Male,CSE,Often,ChatGPT,2,3,2,3,3,3,3,3,4,2,3,2,2,3.29,3.0,2.5,2.6,Balanced / Moderate Users,12,10,13,3.0,2.5,2.6,3
+1,Female,EEE,Sometimes,ChatGPT,3,3,3,3,3,3,3,3,4,4,3,2,5,3.13,3.0,3.0,3.6,"Strategic Users (High Reliance, High Benefit)",12,12,18,3.0,3.0,3.6,2
+3,Male,BBA,Sometimes,Other,2,2,2,3,4,5,3,4,1,1,1,2,2,3.63,4.0,2.25,1.4,Cautious / Low-Usage Traditional Learners,16,9,7,4.0,2.25,1.4,2
+1,Male,Pharmacy,Often,ChatGPT,3,5,4,4,4,5,5,3,3,3,3,3,3,3.7,4.25,4.0,3.0,Highly Dependent / At-Risk Users,17,16,15,4.25,4.0,3.0,3
+4,Female,BBA,Sometimes,ChatGPT,4,4,3,3,2,3,3,3,3,3,3,3,2,3.49,2.75,3.5,2.8,Balanced / Moderate Users,11,14,14,2.75,3.5,2.8,2
+2,Male,CSE,Sometimes,Microsoft Copilot,2,2,3,1,5,4,4,3,2,4,3,3,2,3.38,4.0,2.0,2.8,Cautious / Low-Usage Traditional Learners,16,8,14,4.0,2.0,2.8,2
+1,Male,BBA,Daily,Microsoft Copilot,4,3,2,3,4,5,5,5,1,3,5,4,2,3.28,4.75,3.0,3.0,Balanced / Moderate Users,19,12,15,4.75,3.0,3.0,4
+4,Male,CSE,Daily,Gemini,3,4,5,5,1,2,3,2,3,3,4,3,3,3.41,2.0,4.25,3.2,Highly Dependent / At-Risk Users,8,17,16,2.0,4.25,3.2,4
+1,Female,Pharmacy,Sometimes,Other,3,2,3,4,3,4,3,3,2,4,3,4,3,3.16,3.25,3.0,3.2,Balanced / Moderate Users,13,12,16,3.25,3.0,3.2,2
+2,Female,CSE,Daily,Gemini,5,4,5,4,4,3,3,3,4,4,4,5,4,3.16,3.25,4.5,4.2,"Strategic Users (High Reliance, High Benefit)",13,18,21,3.25,4.5,4.2,4
+1,Prefer not to say,BBA,Often,ChatGPT,3,3,3,3,3,4,3,3,5,5,5,4,4,3.79,3.25,3.0,4.6,"Strategic Users (High Reliance, High Benefit)",13,12,23,3.25,3.0,4.6,3
+1,Male,CSE,Sometimes,ChatGPT,4,4,3,4,3,3,3,4,4,3,4,3,4,3.6,3.25,3.75,3.6,"Strategic Users (High Reliance, High Benefit)",13,15,18,3.25,3.75,3.6,2
+1,Male,CSE,Sometimes,Gemini,5,3,3,4,4,4,2,4,3,2,1,2,1,3.63,3.5,3.75,1.8,Highly Dependent / At-Risk Users,14,15,9,3.5,3.75,1.8,2
+1,Male,Civil,Often,Microsoft Copilot,3,3,2,2,2,3,4,2,4,2,3,2,4,3.89,2.75,2.5,3.0,Balanced / Moderate Users,11,10,15,2.75,2.5,3.0,3
+1,Male,BBA,Sometimes,Other,5,4,5,5,4,3,2,2,3,1,2,2,2,3.29,2.75,4.75,2.0,Highly Dependent / At-Risk Users,11,19,10,2.75,4.75,2.0,2
+1,Prefer not to say,EEE,Sometimes,Gemini,4,3,2,1,3,3,4,3,5,4,4,3,4,3.13,3.25,2.5,4.0,Balanced / Moderate Users,13,10,20,3.25,2.5,4.0,2
+3,Female,Pharmacy,Daily,ChatGPT,5,5,4,5,2,3,2,3,4,4,3,4,4,3.07,2.5,4.75,3.8,"Strategic Users (High Reliance, High Benefit)",10,19,19,2.5,4.75,3.8,4
+3,Female,Civil,Often,Gemini,3,5,4,5,4,4,4,4,3,5,5,5,4,3.04,4.0,4.25,4.4,"Strategic Users (High Reliance, High Benefit)",16,17,22,4.0,4.25,4.4,3
+2,Male,CSE,Sometimes,Gemini,3,3,4,4,1,3,2,4,5,5,4,4,5,3.54,2.5,3.5,4.6,"Strategic Users (High Reliance, High Benefit)",10,14,23,2.5,3.5,4.6,2
+2,Female,EEE,Often,ChatGPT,2,2,2,2,5,4,3,3,2,3,4,3,5,3.31,3.75,2.0,3.4,Cautious / Low-Usage Traditional Learners,15,8,17,3.75,2.0,3.4,3
+2,Male,EEE,Often,ChatGPT,2,2,1,2,5,4,5,5,5,4,4,4,4,3.68,4.75,1.75,4.2,Cautious / Low-Usage Traditional Learners,19,7,21,4.75,1.75,4.2,3
+4,Male,BBA,Daily,Gemini,5,5,5,5,2,4,3,3,4,5,4,4,4,3.25,3.0,5.0,4.2,"Strategic Users (High Reliance, High Benefit)",12,20,21,3.0,5.0,4.2,4
+4,Male,CSE,Daily,ChatGPT,5,5,4,5,3,5,4,3,4,4,3,3,4,3.15,3.75,4.75,3.6,"Strategic Users (High Reliance, High Benefit)",15,19,18,3.75,4.75,3.6,4
+1,Male,CSE,Sometimes,ChatGPT,3,4,3,2,4,4,4,4,4,3,2,3,3,2.81,4.0,3.0,3.0,Balanced / Moderate Users,16,12,15,4.0,3.0,3.0,2
+1,Male,Civil,Often,Microsoft Copilot,5,5,5,4,3,2,2,2,5,5,5,5,5,2.67,2.25,4.75,5.0,"Strategic Users (High Reliance, High Benefit)",9,19,25,2.25,4.75,5.0,3
+1,Male,Civil,Sometimes,Other,3,3,3,3,4,5,5,4,4,2,3,3,4,3.83,4.5,3.0,3.2,Balanced / Moderate Users,18,12,16,4.5,3.0,3.2,2
+1,Male,English,Daily,ChatGPT,3,2,4,4,4,3,4,4,4,1,2,3,2,3.24,3.75,3.25,2.4,Balanced / Moderate Users,15,13,12,3.75,3.25,2.4,4
+3,Female,Pharmacy,Often,Gemini,4,4,4,3,4,3,4,4,5,3,4,3,3,3.6,3.75,3.75,3.6,"Strategic Users (High Reliance, High Benefit)",15,15,18,3.75,3.75,3.6,3
+2,Male,BBA,Sometimes,ChatGPT,2,2,3,1,3,4,4,3,3,4,3,3,3,3.44,3.5,2.0,3.2,Cautious / Low-Usage Traditional Learners,14,8,16,3.5,2.0,3.2,2
+1,Male,BBA,Often,ChatGPT,5,5,4,5,4,3,3,3,3,2,3,3,3,3.02,3.25,4.75,2.8,Highly Dependent / At-Risk Users,13,19,14,3.25,4.75,2.8,3
+2,Female,BBA,Sometimes,Gemini,4,3,3,4,2,2,2,4,4,3,3,4,3,3.13,2.5,3.5,3.4,Balanced / Moderate Users,10,14,17,2.5,3.5,3.4,2
+2,Female,EEE,Often,ChatGPT,4,3,3,4,5,5,5,4,3,2,3,3,2,3.34,4.75,3.5,2.6,Balanced / Moderate Users,19,14,13,4.75,3.5,2.6,3
+1,Male,EEE,Rarely,ChatGPT,2,3,4,3,4,5,3,5,4,1,3,2,2,3.22,4.25,3.0,2.4,Balanced / Moderate Users,17,12,12,4.25,3.0,2.4,1
+4,Male,CSE,Often,ChatGPT,2,2,5,3,3,3,4,5,4,2,2,3,3,2.81,3.75,3.0,2.8,Balanced / Moderate Users,15,12,14,3.75,3.0,2.8,3
+1,Female,BBA,Sometimes,ChatGPT,5,3,5,4,2,3,3,3,5,4,5,4,5,2.93,2.75,4.25,4.6,"Strategic Users (High Reliance, High Benefit)",11,17,23,2.75,4.25,4.6,2
+4,Male,CSE,Often,ChatGPT,5,3,4,3,2,2,2,3,3,4,5,5,4,2.84,2.25,3.75,4.2,"Strategic Users (High Reliance, High Benefit)",9,15,21,2.25,3.75,4.2,3
+1,Male,CSE,Rarely,Microsoft Copilot,2,4,3,3,1,3,3,4,3,2,2,2,4,3.03,2.75,3.0,2.6,Balanced / Moderate Users,11,12,13,2.75,3.0,2.6,1
+4,Female,BBA,Daily,Gemini,5,5,5,5,2,3,2,2,3,2,4,4,4,3.04,2.25,5.0,3.4,Balanced / Moderate Users,9,20,17,2.25,5.0,3.4,4
+4,Male,CSE,Daily,Gemini,4,5,3,5,3,2,2,1,4,2,3,2,4,3.49,2.0,4.25,3.0,Highly Dependent / At-Risk Users,8,17,15,2.0,4.25,3.0,4
+4,Female,CSE,Sometimes,Other,4,4,4,4,4,3,4,3,3,4,2,3,2,3.63,3.5,4.0,2.8,Highly Dependent / At-Risk Users,14,16,14,3.5,4.0,2.8,2
+4,Female,English,Daily,Bing AI,4,5,4,5,2,3,2,2,3,4,4,4,4,3.22,2.25,4.5,3.8,"Strategic Users (High Reliance, High Benefit)",9,18,19,2.25,4.5,3.8,4
+4,Female,Civil,Often,Other,3,4,2,1,3,2,3,3,5,4,5,5,5,3.15,2.75,2.5,4.8,Balanced / Moderate Users,11,10,24,2.75,2.5,4.8,3
+3,Male,CSE,Often,ChatGPT,5,5,5,5,1,1,3,3,4,3,2,2,3,2.86,2.0,5.0,2.8,Highly Dependent / At-Risk Users,8,20,14,2.0,5.0,2.8,3
+4,Male,CSE,Daily,ChatGPT,5,5,5,5,3,3,2,4,3,4,3,3,3,3.4,3.0,5.0,3.2,Highly Dependent / At-Risk Users,12,20,16,3.0,5.0,3.2,4
+1,Male,CSE,Sometimes,ChatGPT,3,4,3,3,5,5,4,5,4,3,3,2,4,3.34,4.75,3.25,3.2,Balanced / Moderate Users,19,13,16,4.75,3.25,3.2,2
+3,Male,English,Often,Gemini,2,4,2,3,4,5,4,5,3,4,3,2,3,3.97,4.5,2.75,3.0,Balanced / Moderate Users,18,11,15,4.5,2.75,3.0,3
+2,Female,English,Sometimes,Other,2,4,2,3,5,4,3,3,3,2,3,2,3,3.37,3.75,2.75,2.6,Balanced / Moderate Users,15,11,13,3.75,2.75,2.6,2
+4,Male,CSE,Daily,ChatGPT,4,4,4,3,3,4,3,4,4,3,4,3,4,3.75,3.5,3.75,3.6,"Strategic Users (High Reliance, High Benefit)",14,15,18,3.5,3.75,3.6,4
+2,Male,English,Daily,Gemini,5,4,4,3,4,3,3,4,4,4,3,5,4,3.28,3.5,4.0,4.0,"Strategic Users (High Reliance, High Benefit)",14,16,20,3.5,4.0,4.0,4
+2,Female,CSE,Sometimes,ChatGPT,3,3,4,2,5,5,5,4,4,5,4,5,4,3.04,4.75,3.0,4.4,"Strategic Users (High Reliance, High Benefit)",19,12,22,4.75,3.0,4.4,2
+3,Female,CSE,Daily,ChatGPT,5,4,4,4,3,1,2,2,3,3,4,2,2,3.1,2.0,4.25,2.8,Highly Dependent / At-Risk Users,8,17,14,2.0,4.25,2.8,4
+1,Male,Pharmacy,Rarely,ChatGPT,2,1,3,2,4,5,5,5,2,3,3,4,4,3.49,4.75,2.0,3.2,Cautious / Low-Usage Traditional Learners,19,8,16,4.75,2.0,3.2,1
+1,Male,CSE,Often,ChatGPT,3,3,3,4,3,4,3,3,5,3,5,4,5,3.44,3.25,3.25,4.4,"Strategic Users (High Reliance, High Benefit)",13,13,22,3.25,3.25,4.4,3
+2,Prefer not to say,CSE,Often,ChatGPT,5,5,5,3,3,1,3,2,4,3,4,3,5,3.26,2.25,4.5,3.8,"Strategic Users (High Reliance, High Benefit)",9,18,19,2.25,4.5,3.8,3
+2,Female,EEE,Rarely,ChatGPT,3,2,3,3,2,4,4,3,4,4,4,3,4,3.61,3.25,2.75,3.8,Balanced / Moderate Users,13,11,19,3.25,2.75,3.8,1
+1,Female,BBA,Sometimes,ChatGPT,2,1,3,2,4,5,3,4,4,4,5,3,4,3.66,4.0,2.0,4.0,Cautious / Low-Usage Traditional Learners,16,8,20,4.0,2.0,4.0,2
+2,Female,Pharmacy,Often,Gemini,5,4,5,5,3,2,3,3,3,3,3,4,4,2.75,2.75,4.75,3.4,Balanced / Moderate Users,11,19,17,2.75,4.75,3.4,3
+2,Female,Pharmacy,Often,ChatGPT,4,4,4,4,3,3,3,5,2,3,5,3,2,3.47,3.5,4.0,3.0,Highly Dependent / At-Risk Users,14,16,15,3.5,4.0,3.0,3
+2,Male,CSE,Daily,Bing AI,5,5,5,4,2,3,2,3,4,3,3,3,2,3.15,2.5,4.75,3.0,Highly Dependent / At-Risk Users,10,19,15,2.5,4.75,3.0,4
+2,Male,CSE,Often,ChatGPT,5,4,3,5,2,3,2,2,4,4,4,3,4,3.23,2.25,4.25,3.8,"Strategic Users (High Reliance, High Benefit)",9,17,19,2.25,4.25,3.8,3
+3,Male,English,Daily,Other,5,4,5,4,2,2,2,4,3,3,5,3,4,2.93,2.5,4.5,3.6,"Strategic Users (High Reliance, High Benefit)",10,18,18,2.5,4.5,3.6,4
+2,Female,CSE,Daily,ChatGPT,5,4,5,5,2,3,2,2,4,4,3,3,3,3.05,2.25,4.75,3.4,Balanced / Moderate Users,9,19,17,2.25,4.75,3.4,4
+4,Female,Civil,Often,Bing AI,4,4,5,4,3,2,3,2,4,2,3,3,4,3.64,2.5,4.25,3.2,Highly Dependent / At-Risk Users,10,17,16,2.5,4.25,3.2,3
+4,Male,BBA,Daily,ChatGPT,5,3,4,5,3,4,4,3,4,4,4,4,4,3.14,3.5,4.25,4.0,"Strategic Users (High Reliance, High Benefit)",14,17,20,3.5,4.25,4.0,4
+2,Male,CSE,Sometimes,Microsoft Copilot,5,5,4,5,3,2,3,4,3,3,3,1,3,2.92,3.0,4.75,2.6,Highly Dependent / At-Risk Users,12,19,13,3.0,4.75,2.6,2
+2,Male,English,Daily,ChatGPT,4,4,5,4,1,3,2,3,2,4,4,2,3,3.3,2.25,4.25,3.0,Highly Dependent / At-Risk Users,9,17,15,2.25,4.25,3.0,4
+3,Female,CSE,Often,Gemini,4,4,3,3,3,3,3,3,2,3,3,3,4,3.27,3.0,3.5,3.0,Balanced / Moderate Users,12,14,15,3.0,3.5,3.0,3
+4,Male,EEE,Often,Gemini,3,4,2,3,4,4,4,4,3,2,2,3,2,3.94,4.0,3.0,2.4,Balanced / Moderate Users,16,12,12,4.0,3.0,2.4,3
+3,Male,EEE,Daily,ChatGPT,4,4,4,4,2,2,2,2,3,5,4,5,5,3.54,2.0,4.0,4.4,"Strategic Users (High Reliance, High Benefit)",8,16,22,2.0,4.0,4.4,4
+4,Male,EEE,Sometimes,Bing AI,4,3,2,4,4,4,4,5,3,3,3,4,4,3.5,4.25,3.25,3.4,Balanced / Moderate Users,17,13,17,4.25,3.25,3.4,2
+3,Male,BBA,Daily,ChatGPT,3,3,2,2,3,4,3,4,3,4,3,3,3,2.91,3.5,2.5,3.2,Cautious / Low-Usage Traditional Learners,14,10,16,3.5,2.5,3.2,4
+3,Male,BBA,Sometimes,Gemini,2,3,4,4,3,3,3,4,2,2,4,2,1,3.14,3.25,3.25,2.2,Balanced / Moderate Users,13,13,11,3.25,3.25,2.2,2
+2,Male,Pharmacy,Often,ChatGPT,5,3,4,4,3,3,2,3,2,3,3,3,2,3.35,2.75,4.0,2.6,Highly Dependent / At-Risk Users,11,16,13,2.75,4.0,2.6,3
+3,Male,Pharmacy,Often,Bing AI,5,5,4,3,2,2,1,3,2,2,3,2,3,3.44,2.0,4.25,2.4,Highly Dependent / At-Risk Users,8,17,12,2.0,4.25,2.4,3
+1,Male,EEE,Daily,ChatGPT,4,5,4,5,4,5,4,4,3,4,3,4,3,3.25,4.25,4.5,3.4,Balanced / Moderate Users,17,18,17,4.25,4.5,3.4,4
+3,Male,CSE,Often,ChatGPT,5,5,4,4,3,3,2,2,2,3,4,3,3,2.32,2.5,4.5,3.0,Highly Dependent / At-Risk Users,10,18,15,2.5,4.5,3.0,3
+4,Male,BBA,Daily,ChatGPT,5,4,5,4,1,2,4,2,4,4,3,5,3,3.01,2.25,4.5,3.8,"Strategic Users (High Reliance, High Benefit)",9,18,19,2.25,4.5,3.8,4
+1,Male,Pharmacy,Sometimes,Gemini,3,3,3,4,4,5,5,5,3,3,2,3,2,2.61,4.75,3.25,2.6,Balanced / Moderate Users,19,13,13,4.75,3.25,2.6,2
+3,Female,CSE,Daily,Gemini,5,5,5,5,1,1,1,3,3,3,5,3,2,3.07,1.5,5.0,3.2,Highly Dependent / At-Risk Users,6,20,16,1.5,5.0,3.2,4
+1,Male,EEE,Sometimes,Gemini,4,3,3,3,5,5,5,5,3,3,3,3,4,3.26,5.0,3.25,3.2,Balanced / Moderate Users,20,13,16,5.0,3.25,3.2,2
+3,Male,EEE,Daily,Gemini,4,3,4,4,4,4,2,4,2,3,3,3,3,3.24,3.5,3.75,2.8,Highly Dependent / At-Risk Users,14,15,14,3.5,3.75,2.8,4
+1,Male,CSE,Often,Other,3,5,4,5,2,1,4,2,5,4,4,4,3,3.17,2.25,4.25,4.0,"Strategic Users (High Reliance, High Benefit)",9,17,20,2.25,4.25,4.0,3
+4,Male,BBA,Often,ChatGPT,5,5,4,5,3,3,5,4,3,3,4,3,2,3.02,3.75,4.75,3.0,Highly Dependent / At-Risk Users,15,19,15,3.75,4.75,3.0,3
+1,Male,CSE,Often,ChatGPT,3,3,4,3,3,3,2,3,4,5,3,4,4,3.54,2.75,3.25,4.0,"Strategic Users (High Reliance, High Benefit)",11,13,20,2.75,3.25,4.0,3
+4,Male,English,Daily,ChatGPT,5,5,4,4,3,3,1,3,3,2,1,2,3,3.13,2.5,4.5,2.2,Highly Dependent / At-Risk Users,10,18,11,2.5,4.5,2.2,4
+4,Female,English,Often,ChatGPT,3,3,4,3,3,3,4,4,3,4,5,3,4,3.61,3.5,3.25,3.8,"Strategic Users (High Reliance, High Benefit)",14,13,19,3.5,3.25,3.8,3
+3,Male,English,Often,ChatGPT,3,2,3,3,4,3,4,3,3,4,3,3,3,3.22,3.5,2.75,3.2,Balanced / Moderate Users,14,11,16,3.5,2.75,3.2,3
+4,Male,CSE,Daily,Gemini,5,5,5,5,3,1,3,3,4,5,3,4,4,3.01,2.5,5.0,4.0,"Strategic Users (High Reliance, High Benefit)",10,20,20,2.5,5.0,4.0,4
+4,Male,CSE,Daily,Gemini,5,5,4,3,3,4,4,2,3,4,3,4,3,2.96,3.25,4.25,3.4,Balanced / Moderate Users,13,17,17,3.25,4.25,3.4,4
+4,Male,BBA,Often,Gemini,3,4,3,3,3,2,3,1,3,1,2,3,3,2.91,2.25,3.25,2.4,Balanced / Moderate Users,9,13,12,2.25,3.25,2.4,3
+1,Male,English,Sometimes,ChatGPT,3,3,4,3,3,2,4,3,1,2,3,2,2,2.91,3.0,3.25,2.0,Balanced / Moderate Users,12,13,10,3.0,3.25,2.0,2
+3,Female,EEE,Often,ChatGPT,5,5,4,5,2,3,3,3,3,3,3,2,4,3.1,2.75,4.75,3.0,Highly Dependent / At-Risk Users,11,19,15,2.75,4.75,3.0,3
+1,Female,Civil,Sometimes,Gemini,3,2,4,2,5,4,5,4,3,4,3,2,2,3.63,4.5,2.75,2.8,Balanced / Moderate Users,18,11,14,4.5,2.75,2.8,2
+3,Male,CSE,Daily,Gemini,4,4,5,4,1,3,2,3,5,4,4,4,5,2.87,2.25,4.25,4.4,"Strategic Users (High Reliance, High Benefit)",9,17,22,2.25,4.25,4.4,4
+1,Male,Civil,Often,ChatGPT,5,5,4,4,5,3,3,5,4,4,4,3,4,3.08,4.0,4.5,3.8,"Strategic Users (High Reliance, High Benefit)",16,18,19,4.0,4.5,3.8,3
+3,Male,CSE,Daily,ChatGPT,5,5,5,5,2,3,3,4,4,4,4,3,3,2.91,3.0,5.0,3.6,"Strategic Users (High Reliance, High Benefit)",12,20,18,3.0,5.0,3.6,4
+3,Male,CSE,Sometimes,ChatGPT,4,3,4,3,4,4,4,5,3,3,2,4,3,3.56,4.25,3.5,3.0,Balanced / Moderate Users,17,14,15,4.25,3.5,3.0,2
+2,Female,EEE,Daily,Microsoft Copilot,3,2,4,3,4,4,3,5,2,1,3,2,4,3.16,4.0,3.0,2.4,Balanced / Moderate Users,16,12,12,4.0,3.0,2.4,4
+2,Male,CSE,Daily,ChatGPT,4,3,3,2,3,2,3,1,2,3,2,3,3,3.86,2.25,3.0,2.6,Balanced / Moderate Users,9,12,13,2.25,3.0,2.6,4
+3,Male,CSE,Daily,Microsoft Copilot,3,4,3,2,5,3,2,4,2,3,2,2,2,3.43,3.5,3.0,2.2,Balanced / Moderate Users,14,12,11,3.5,3.0,2.2,4
+4,Female,CSE,Often,Gemini,4,3,5,5,2,4,2,4,4,4,4,3,4,3.29,3.0,4.25,3.8,"Strategic Users (High Reliance, High Benefit)",12,17,19,3.0,4.25,3.8,3
+2,Male,EEE,Often,Gemini,1,3,1,2,4,3,4,3,3,2,3,3,2,3.86,3.5,1.75,2.6,Cautious / Low-Usage Traditional Learners,14,7,13,3.5,1.75,2.6,3
+3,Male,English,Daily,Microsoft Copilot,5,4,5,5,2,2,2,2,3,2,4,2,2,3.01,2.0,4.75,2.6,Highly Dependent / At-Risk Users,8,19,13,2.0,4.75,2.6,4
+4,Female,CSE,Sometimes,Other,5,5,3,4,2,3,3,3,2,4,2,3,3,3.02,2.75,4.25,2.8,Highly Dependent / At-Risk Users,11,17,14,2.75,4.25,2.8,2
+1,Male,BBA,Often,ChatGPT,5,4,5,4,3,4,4,4,5,5,5,5,5,3.26,3.75,4.5,5.0,"Strategic Users (High Reliance, High Benefit)",15,18,25,3.75,4.5,5.0,3
+1,Male,English,Rarely,ChatGPT,3,2,2,3,3,4,4,2,1,3,3,2,3,3.44,3.25,2.5,2.4,Balanced / Moderate Users,13,10,12,3.25,2.5,2.4,1
+1,Male,CSE,Sometimes,ChatGPT,4,4,3,2,4,3,3,2,3,2,3,4,4,3.48,3.0,3.25,3.2,Balanced / Moderate Users,12,13,16,3.0,3.25,3.2,2
+3,Female,CSE,Often,ChatGPT,5,5,5,4,2,3,2,2,2,3,3,3,2,3.5,2.25,4.75,2.6,Highly Dependent / At-Risk Users,9,19,13,2.25,4.75,2.6,3
+2,Male,Civil,Daily,ChatGPT,4,5,5,5,2,4,3,2,3,5,4,3,4,3.44,2.75,4.75,3.8,"Strategic Users (High Reliance, High Benefit)",11,19,19,2.75,4.75,3.8,4
+4,Male,English,Often,Gemini,3,4,4,4,3,3,4,4,5,4,3,5,3,3.61,3.5,3.75,4.0,"Strategic Users (High Reliance, High Benefit)",14,15,20,3.5,3.75,4.0,3
+3,Male,EEE,Daily,Gemini,3,3,4,5,3,4,4,4,3,4,3,4,2,3.21,3.75,3.75,3.2,Highly Dependent / At-Risk Users,15,15,16,3.75,3.75,3.2,4
+2,Male,English,Often,ChatGPT,4,4,5,4,2,3,2,3,4,3,5,3,4,3.83,2.5,4.25,3.8,"Strategic Users (High Reliance, High Benefit)",10,17,19,2.5,4.25,3.8,3
+4,Female,CSE,Often,ChatGPT,3,3,3,3,4,3,4,4,2,4,2,1,3,3.49,3.75,3.0,2.4,Balanced / Moderate Users,15,12,12,3.75,3.0,2.4,3
+3,Male,CSE,Sometimes,Bing AI,5,5,5,5,2,3,2,2,1,1,2,2,1,3.29,2.25,5.0,1.4,Highly Dependent / At-Risk Users,9,20,7,2.25,5.0,1.4,2
+2,Male,BBA,Daily,Other,4,5,4,4,3,2,2,3,2,2,3,3,2,3.05,2.5,4.25,2.4,Highly Dependent / At-Risk Users,10,17,12,2.5,4.25,2.4,4
+2,Female,CSE,Daily,ChatGPT,4,5,5,5,2,2,2,2,3,3,3,3,3,2.81,2.0,4.75,3.0,Highly Dependent / At-Risk Users,8,19,15,2.0,4.75,3.0,4
+2,Female,BBA,Often,Microsoft Copilot,5,4,5,5,2,3,2,4,3,3,4,3,3,3.24,2.75,4.75,3.2,Highly Dependent / At-Risk Users,11,19,16,2.75,4.75,3.2,3
+1,Male,EEE,Often,Microsoft Copilot,4,5,3,3,4,4,4,5,4,4,3,3,3,3.47,4.25,3.75,3.4,Balanced / Moderate Users,17,15,17,4.25,3.75,3.4,3
+1,Female,BBA,Often,Microsoft Copilot,4,4,3,4,3,4,3,5,3,3,3,2,3,3.22,3.75,3.75,2.8,Highly Dependent / At-Risk Users,15,15,14,3.75,3.75,2.8,3
+4,Female,EEE,Often,Gemini,5,4,5,4,3,2,2,1,3,3,2,2,3,3.28,2.0,4.5,2.6,Highly Dependent / At-Risk Users,8,18,13,2.0,4.5,2.6,3
+2,Male,CSE,Daily,ChatGPT,4,5,5,5,3,3,2,3,3,5,5,5,5,3.14,2.75,4.75,4.6,"Strategic Users (High Reliance, High Benefit)",11,19,23,2.75,4.75,4.6,4
+2,Female,CSE,Often,Bing AI,2,2,2,1,4,2,4,3,4,5,4,5,4,3.14,3.25,1.75,4.4,Balanced / Moderate Users,13,7,22,3.25,1.75,4.4,3
+3,Female,CSE,Daily,Gemini,3,2,2,3,2,3,3,2,5,5,4,5,5,3.34,2.5,2.5,4.8,Balanced / Moderate Users,10,10,24,2.5,2.5,4.8,4
+3,Male,BBA,Often,Gemini,5,5,3,5,4,2,3,3,2,3,2,3,2,2.98,3.0,4.5,2.4,Highly Dependent / At-Risk Users,12,18,12,3.0,4.5,2.4,3
+4,Female,CSE,Sometimes,Gemini,4,3,4,3,4,3,4,4,3,3,2,4,3,3.5,3.75,3.5,3.0,Balanced / Moderate Users,15,14,15,3.75,3.5,3.0,2
+4,Male,CSE,Often,ChatGPT,4,3,4,4,4,4,4,5,4,4,4,4,5,3.65,4.25,3.75,4.2,"Strategic Users (High Reliance, High Benefit)",17,15,21,4.25,3.75,4.2,3
+2,Female,CSE,Often,ChatGPT,4,4,2,4,3,3,4,4,3,4,4,4,4,2.93,3.5,3.5,3.8,"Strategic Users (High Reliance, High Benefit)",14,14,19,3.5,3.5,3.8,3
+2,Prefer not to say,CSE,Daily,ChatGPT,4,4,5,4,2,3,2,3,2,2,3,3,2,2.9,2.5,4.25,2.4,Highly Dependent / At-Risk Users,10,17,12,2.5,4.25,2.4,4
+4,Male,English,Daily,ChatGPT,5,5,4,5,4,1,2,2,3,3,4,3,4,3.12,2.25,4.75,3.4,Balanced / Moderate Users,9,19,17,2.25,4.75,3.4,4
+3,Female,CSE,Often,Microsoft Copilot,3,3,2,2,3,4,4,3,4,4,3,3,3,3.35,3.5,2.5,3.4,Cautious / Low-Usage Traditional Learners,14,10,17,3.5,2.5,3.4,3
+4,Male,Pharmacy,Sometimes,ChatGPT,3,3,3,4,3,3,4,4,3,3,2,3,3,3.76,3.5,3.25,2.8,Balanced / Moderate Users,14,13,14,3.5,3.25,2.8,2
+1,Female,CSE,Often,Gemini,5,5,5,5,2,2,2,4,4,3,4,2,3,3.41,2.5,5.0,3.2,Highly Dependent / At-Risk Users,10,20,16,2.5,5.0,3.2,3
+4,Female,BBA,Often,ChatGPT,5,4,4,3,4,4,3,3,5,5,5,5,5,3.15,3.5,4.0,5.0,"Strategic Users (High Reliance, High Benefit)",14,16,25,3.5,4.0,5.0,3
+3,Male,EEE,Sometimes,ChatGPT,2,2,2,3,3,3,3,4,2,3,4,5,2,3.45,3.25,2.25,3.2,Balanced / Moderate Users,13,9,16,3.25,2.25,3.2,2
+1,Male,CSE,Sometimes,Microsoft Copilot,2,3,1,2,3,3,3,3,4,4,5,4,4,3.43,3.0,2.0,4.2,Balanced / Moderate Users,12,8,21,3.0,2.0,4.2,2
+3,Male,Civil,Often,Gemini,5,3,4,3,5,4,4,4,4,4,4,2,4,3.28,4.25,3.75,3.6,"Strategic Users (High Reliance, High Benefit)",17,15,18,4.25,3.75,3.6,3
+3,Male,Pharmacy,Daily,Gemini,5,4,4,4,5,4,5,3,5,4,4,4,5,3.3,4.25,4.25,4.4,"Strategic Users (High Reliance, High Benefit)",17,17,22,4.25,4.25,4.4,4
+1,Male,Civil,Often,ChatGPT,5,5,5,5,3,4,4,5,3,2,2,3,2,2.76,4.0,5.0,2.4,Highly Dependent / At-Risk Users,16,20,12,4.0,5.0,2.4,3
+2,Male,CSE,Daily,ChatGPT,5,5,2,4,3,3,3,3,4,5,4,4,4,2.43,3.0,4.0,4.2,"Strategic Users (High Reliance, High Benefit)",12,16,21,3.0,4.0,4.2,4
+4,Male,CSE,Sometimes,ChatGPT,4,4,5,4,2,3,3,3,3,3,3,3,4,3.44,2.75,4.25,3.2,Highly Dependent / At-Risk Users,11,17,16,2.75,4.25,3.2,2
+2,Male,BBA,Often,ChatGPT,4,5,5,4,3,3,4,3,2,1,2,3,2,2.99,3.25,4.5,2.0,Highly Dependent / At-Risk Users,13,18,10,3.25,4.5,2.0,3
+2,Female,CSE,Sometimes,Microsoft Copilot,3,5,5,4,3,3,4,2,4,3,5,4,4,3.16,3.0,4.25,4.0,"Strategic Users (High Reliance, High Benefit)",12,17,20,3.0,4.25,4.0,2
+2,Female,BBA,Sometimes,Gemini,4,4,4,3,3,3,2,5,5,4,3,3,4,3.82,3.25,3.75,3.8,"Strategic Users (High Reliance, High Benefit)",13,15,19,3.25,3.75,3.8,2

@@ -1,0 +1,12 @@
+# Local Python environments and caches
+.venv/
+.matplotlib/
+__pycache__/
+.pytest_cache/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.py[cod]
+Thumbs.db
+.DS_Store
