@@ -10,6 +10,7 @@ import hashlib
 import json
 import os
 import shutil
+from argparse import ArgumentParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -31,7 +32,6 @@ from statsmodels.stats.anova import anova_lm
 
 SOURCE = ROOT / "Survey_Data_GenAI_Critical_Thinking_Bangladesh.xlsx"
 OUT = ROOT / "outputs"
-FIGURES = OUT / "figures"
 
 CT_ITEMS = ["CT1_IndependentAnalysis", "CT2_ProblemSolving", "CT3_EvaluateSources", "CT4_ArgueReasoning"]
 DEPENDENCY_ITEMS = ["RelyOnAI_Answers", "ReducesCritical", "LimitsSkills", "MemoryRetentionDrop"]
@@ -59,6 +59,8 @@ def effect_size_epsilon_squared(groups: list[pd.Series], h_stat: float) -> float
 
 def bootstrap_mean_ci(values: pd.Series, reps: int = 3000, seed: int = 20260908) -> tuple[float, float]:
     values = values.dropna().to_numpy()
+    if len(values) < 2:
+        raise ValueError("At least two complete responses are required to calculate a bootstrap confidence interval.")
     rng = np.random.default_rng(seed)
     means = np.mean(rng.choice(values, size=(reps, len(values)), replace=True), axis=1)
     return tuple(np.quantile(means, [0.025, 0.975]))
@@ -78,7 +80,31 @@ def validate_and_score(data: pd.DataFrame) -> tuple[pd.DataFrame, list[str], pd.
     if missing:
         raise ValueError(f"Data sheet is missing required fields: {missing}")
 
-    issues: list[str] = []
+missing_values = [column for column in required if data[column].isna().any()]
+    if missing_values:
+        raise ValueError(f"Analytic fields contain missing value(s): {missing_values}")
+
+    scored = data.copy()
+    numeric_fields = ["Year", "CGPA", *LIKERT_ITEMS]
+for column in numeric_fields:
+        converted = pd.to_numeric(scored[column], errors="coerce")
+        non_numeric = scored[column].notna() & converted.isna()
+        if non_numeric.any():
+            raise ValueError(f"{column} contains {int(non_numeric.sum())} non-numeric value(s).")
+        scored[column] = converted
+
+    invalid_usage = sorted(set(scored["Usage_Freq"]) - set(USAGE_ORDER))
+    if invalid_usage:
+        raise ValueError(f"Unexpected Usage_Freq value(s): {invalid_usage}.")
+    if not scored["Year"].between(1, 4).all():
+        raise ValueError("Year contains value(s) outside the documented 1–4 range.")
+    for column in LIKERT_ITEMS:
+        if not scored[column].between(1, 5).all():
+            raise ValueError(f"{column} contains value(s) outside the documented 1–5 Likert range.")
+        if not scored["CGPA"].between(0, 4).all():
+        raise ValueError("CGPA contains value(s) outside the 0–4 range.")
+
+issues: list[str] = []
     if "StudentID" not in data.columns:
         issues.append("Codebook documents StudentID, but the Data sheet does not contain it; respondent-level duplicate checking is impossible.")
     issues.append("Codebook calls CT1 reverse-worded, while its documented composite and the supplied values use an unreversed arithmetic mean; confirm the original questionnaire anchors before using the score beyond this workbook.")
@@ -86,21 +112,6 @@ def validate_and_score(data: pd.DataFrame) -> tuple[pd.DataFrame, list[str], pd.
         raise ValueError("Data sheet contains no responses.")
     if data.duplicated().any():
         issues.append(f"{int(data.duplicated().sum())} fully duplicated response row(s) detected.")
-    if data["Usage_Freq"].isna().any():
-        issues.append(f"{int(data['Usage_Freq'].isna().sum())} missing Usage_Freq value(s).")
-    invalid_usage = sorted(set(data["Usage_Freq"].dropna()) - set(USAGE_ORDER))
-    if invalid_usage:
-        issues.append(f"Unexpected Usage_Freq value(s): {invalid_usage}.")
-
-    for col in LIKERT_ITEMS:
-        invalid = data[col].dropna()[~data[col].dropna().between(1, 5)]
-        if not invalid.empty:
-            issues.append(f"{col} has {len(invalid)} value(s) outside the documented 1–5 Likert range.")
-    cgpa_invalid = data["CGPA"].dropna()[~data["CGPA"].dropna().between(0, 4)]
-    if not cgpa_invalid.empty:
-        issues.append(f"CGPA has {len(cgpa_invalid)} value(s) outside 0–4.")
-
-    scored = data.copy()
     scored["ct_recomputed"] = scored[CT_ITEMS].mean(axis=1)
     scored["dependency_recomputed"] = scored[DEPENDENCY_ITEMS].mean(axis=1)
     scored["benefit_recomputed"] = scored[BENEFIT_ITEMS].mean(axis=1)
@@ -130,7 +141,7 @@ def validate_and_score(data: pd.DataFrame) -> tuple[pd.DataFrame, list[str], pd.
     return scored, issues, quality
 
 
-def make_figures(scored: pd.DataFrame, frequency: pd.DataFrame) -> None:
+def make_figures(scored: pd.DataFrame, frequency: pd.DataFrame, figures_dir: Path) -> None:
     sns.set_theme(style="whitegrid", context="notebook")
     palette = "Blues"
 
@@ -143,14 +154,14 @@ def make_figures(scored: pd.DataFrame, frequency: pd.DataFrame) -> None:
     ax.set(xlabel="Academic GenAI-use frequency", ylabel="Self-reported critical-thinking score (1–5)", ylim=(1, 5), title="Critical thinking by GenAI-use frequency")
     ax.legend(frameon=True)
     fig.tight_layout()
-    fig.savefig(FIGURES / "critical_thinking_by_usage_frequency.png", dpi=220)
+    fig.savefig(figures_dir / "critical_thinking_by_usage_frequency.png", dpi=220)
     plt.close(fig)
 
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.regplot(data=scored, x="dependency_recomputed", y="ct_recomputed", scatter_kws={"alpha": 0.32, "s": 30, "color": "#548ab7"}, line_kws={"color": "#b22222", "linewidth": 2}, ax=ax)
     ax.set(xlabel="Reported reliance / negative-experience scale (1–5)", ylabel="Self-reported critical-thinking score (1–5)", ylim=(1, 5), xlim=(1, 5), title="Reported reliance/negative experiences are associated with lower CT scores")
     fig.tight_layout()
-    fig.savefig(FIGURES / "critical_thinking_vs_dependency.png", dpi=220)
+    fig.savefig(figures_dir / "critical_thinking_vs_dependency.png", dpi=220)
     plt.close(fig)
 
     long = scored.melt(id_vars="Usage_Freq", value_vars=["ct_recomputed", "dependency_recomputed", "benefit_recomputed"], var_name="measure", value_name="score")
@@ -161,7 +172,7 @@ def make_figures(scored: pd.DataFrame, frequency: pd.DataFrame) -> None:
     ax.set(xlabel="Academic GenAI-use frequency", ylabel="Mean score (1–5)", ylim=(1, 5), title="Use frequency, perceived benefits, reliance, and critical thinking")
     ax.legend(title="Measure", loc="best")
     fig.tight_layout()
-    fig.savefig(FIGURES / "constructs_by_usage_frequency.png", dpi=220)
+    fig.savefig(figures_dir / "constructs_by_usage_frequency.png", dpi=220)
     plt.close(fig)
 
 
@@ -235,24 +246,30 @@ The pipeline reads the original workbook without writing to it. Input checksum (
 """
 
 
-def main() -> None:
-    if not SOURCE.exists():
-        raise FileNotFoundError(f"Source workbook not found: {SOURCE}")
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    FIGURES.mkdir(parents=True)
+def run_analysis(source: Path = SOURCE, output_dir: Path = OUT) -> None:
+    """Run the analysis, replacing only the selected generated-output directory."""
+    source = source.resolve()
+    output_dir = output_dir.resolve()
+    if not source.exists():
+        raise FileNotFoundError(f"Source workbook not found: {source}")
+    if output_dir == source.parent:
+        raise ValueError("Output directory must not be the source workbook directory.")
+    if output_dir.exists():
+        shutil.rmtree(output_dir)
+    figures_dir = output_dir / "figures"
+    figures_dir.mkdir(parents=True)
 
-    data = pd.read_excel(SOURCE, sheet_name="Data")
+    data = pd.read_excel(source, sheet_name="Data")
     scored, issues, quality = validate_and_score(data)
-    quality.to_csv(OUT / "data_quality_profile.csv", index=False)
-    scored.to_csv(OUT / "scored_data.csv", index=False)
+    quality.to_csv(output_dir / "data_quality_profile.csv", index=False)
+    scored.to_csv(output_dir / "scored_data.csv", index=False)
 
     reliability = pd.DataFrame(
         {"scale": ["Critical thinking", "Reported reliance / negative experiences", "Perceived benefits"],
          "items": [len(CT_ITEMS), len(DEPENDENCY_ITEMS), len(BENEFIT_ITEMS)],
          "cronbach_alpha": [cronbach_alpha(scored[CT_ITEMS]), cronbach_alpha(scored[DEPENDENCY_ITEMS]), cronbach_alpha(scored[BENEFIT_ITEMS])]}
     )
-    reliability.to_csv(OUT / "scale_reliability.csv", index=False)
+    reliability.to_csv(output_dir / "scale_reliability.csv", index=False)
 
     usage_rows = []
     for category in USAGE_ORDER:
@@ -260,7 +277,7 @@ def main() -> None:
         low, high = bootstrap_mean_ci(values)
         usage_rows.append({"Usage_Freq": category, "n": len(values), "ct_mean": values.mean(), "ct_sd": values.std(ddof=1), "ci_low": low, "ci_high": high})
     usage = pd.DataFrame(usage_rows)
-    usage.to_csv(OUT / "critical_thinking_by_usage_frequency.csv", index=False)
+    usage.to_csv(output_dir / "critical_thinking_by_usage_frequency.csv", index=False)
     groups = [scored.loc[scored["Usage_Freq"] == group, "ct_recomputed"] for group in USAGE_ORDER]
     h_stat, p_value = kruskal(*groups)
     usage_test = {"H": float(h_stat), "p_value": float(p_value), "epsilon_squared": effect_size_epsilon_squared(groups, h_stat)}
@@ -271,24 +288,32 @@ def main() -> None:
         rho, p = spearmanr(valid[column], valid["ct_recomputed"])
         correlations.append({"measure": label, "n": len(valid), "rho": rho, "p_value": p})
     correlation_table = pd.DataFrame(correlations)
-    correlation_table.to_csv(OUT / "correlations_with_critical_thinking.csv", index=False)
+    correlation_table.to_csv(output_dir / "correlations_with_critical_thinking.csv", index=False)
 
     model_data = scored.dropna(subset=["ct_recomputed", "usage_ordinal", "dependency_recomputed", "benefit_recomputed", "CGPA", "Year", "Gender", "Department"])
     model = smf.ols("ct_recomputed ~ usage_ordinal + dependency_recomputed + benefit_recomputed + CGPA + C(Year) + C(Gender) + C(Department)", data=model_data).fit(cov_type="HC3")
     ci = model.conf_int()
     model_table = pd.DataFrame({"term": model.params.index, "estimate": model.params.values, "std_error_hc3": model.bse.values, "ci_low": ci[0].values, "ci_high": ci[1].values, "p_value": model.pvalues.values})
-    model_table.to_csv(OUT / "adjusted_model.csv", index=False)
+    model_table.to_csv(output_dir / "adjusted_model.csv", index=False)
     anova = anova_lm(smf.ols("ct_recomputed ~ C(Usage_Freq)", data=model_data).fit(), typ=2)
-    anova.to_csv(OUT / "frequency_anova_sensitivity.csv")
-    make_figures(scored, usage)
+    anova.to_csv(output_dir / "frequency_anova_sensitivity.csv")
+    make_figures(scored, usage, figures_dir)
 
     missing_total = int(data.isna().sum().sum())
     duplicate_rows = int(data.duplicated().sum())
     validation_summary = f"The `Data` sheet has {missing_total} missing cell(s) and {duplicate_rows} fully duplicated row(s)."
-    results = {"n": len(scored), "model_n": len(model_data), "sha256": workbook_sha256(SOURCE), "usage": usage, "usage_test": usage_test, "correlations": correlation_table, "model": model_table, "r_squared": float(model.rsquared), "validation_summary": validation_summary, "rare_n": int((scored['Usage_Freq'] == 'Rarely').sum()), "daily_benefit": float(scored.loc[scored['Usage_Freq'] == 'Daily', 'benefit_recomputed'].mean()), "daily_dependency": float(scored.loc[scored['Usage_Freq'] == 'Daily', 'dependency_recomputed'].mean())}
-    (OUT / "analysis_metadata.json").write_text(json.dumps({"source_file": SOURCE.name, "source_sha256": results["sha256"], "n_responses": len(scored), "validation_issues": issues, "usage_test": usage_test}, indent=2), encoding="utf-8")
-    (OUT / "report.md").write_text(build_report(results, issues), encoding="utf-8")
-    print(f"Analysis complete. Read {len(scored)} rows and wrote {OUT.relative_to(ROOT)}.")
+    results = {"n": len(scored), "model_n": len(model_data), "sha256": workbook_sha256(source), "usage": usage, "usage_test": usage_test, "correlations": correlation_table, "model": model_table, "r_squared": float(model.rsquared), "validation_summary": validation_summary, "rare_n": int((scored['Usage_Freq'] == 'Rarely').sum()), "daily_benefit": float(scored.loc[scored['Usage_Freq'] == 'Daily', 'benefit_recomputed'].mean()), "daily_dependency": float(scored.loc[scored['Usage_Freq'] == 'Daily', 'dependency_recomputed'].mean())}
+    (output_dir / "analysis_metadata.json").write_text(json.dumps({"source_file": source.name, "source_sha256": results["sha256"], "n_responses": len(scored), "validation_issues": issues, "usage_test": usage_test}, indent=2), encoding="utf-8")
+    (output_dir / "report.md").write_text(build_report(results, issues), encoding="utf-8")
+    print(f"Analysis complete. Read {len(scored)} rows and wrote {output_dir}.")
+
+
+def main() -> None:
+    parser = ArgumentParser(description="Analyze the GenAI and critical-thinking survey workbook.")
+    parser.add_argument("--source", type=Path, default=SOURCE, help="Source workbook to read (default: project workbook).")
+    parser.add_argument("--output-dir", type=Path, default=OUT, help="Generated-output directory to replace (default: outputs).")
+    args = parser.parse_args()
+    run_analysis(args.source, args.output_dir)
 
 
 if __name__ == "__main__":
